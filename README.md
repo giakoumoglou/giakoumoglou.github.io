@@ -1,6 +1,6 @@
 # giakoumoglou.com
 
-Personal site, live at <https://giakoumoglou.com>.
+Personal site, live at <https://giakoumoglou.com> and <https://giakoumoglou.github.io/>
 
 All content lives in `_data/`. Netlify rebuilds and publishes on every push to
 GitHub, so editing a YAML file in the GitHub web editor is enough to update the
