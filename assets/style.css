@@ -1,8 +1,9 @@
 [data-theme="light"] {
     --blue-accent:#2563eb;--blue-light:#dbeafe;--text-primary:#1a1a2e;--text-secondary:#4a4a6a;
     --text-muted:#6b7280;--bg-body:#fff;--bg-card:#f8fafc;--border-color:#e5e7eb;
-    --link-color:#2563eb;--link-hover:#1d4ed8;--badge-bg:#2563eb;--badge-text:#fff; --badge-workshop-bg:#60a5fa;--badge-workshop-text:#fff; --badge-workshop-bg:#60a5fa;--badge-workshop-text:#fff;--badge-workshop-sub:#e0edfe;
+    --link-color:#2563eb;--link-hover:#1d4ed8;--badge-bg:#2563eb;--badge-text:#fff;
     --badge-review-bg:#6b7280;--bib-bg:#f1f5f9;--bib-border:#e2e8f0;
+    --badge-workshop-bg:#60a5fa;--badge-workshop-text:#fff;--badge-workshop-sub:#e0edfe;
     --pill-bg:transparent;--pill-border:#9ca3af;--pill-text:#374151;--pill-hover-bg:#f3f4f6;
     --toggle-bg:#e5e7eb;--toggle-knob:#fff;--abstract-border:#dbeafe;
     --navbar-bg:rgba(255,255,255,0.92);
@@ -10,8 +11,9 @@
 [data-theme="dark"] {
     --blue-accent:#60a5fa;--blue-light:#1e3a5f;--text-primary:#e2e8f0;--text-secondary:#a0aec0;
     --text-muted:#718096;--bg-body:#0f172a;--bg-card:#1e293b;--border-color:#334155;
-    --link-color:#60a5fa;--link-hover:#93bbfc;--badge-bg:#3b82f6;--badge-text:#fff; --badge-workshop-bg:#93c5fd;--badge-workshop-text:#0f172a;
+    --link-color:#60a5fa;--link-hover:#93bbfc;--badge-bg:#3b82f6;--badge-text:#fff;
     --badge-review-bg:#64748b;--bib-bg:#1e293b;--bib-border:#334155;
+    --badge-workshop-bg:#93c5fd;--badge-workshop-text:#0f172a;--badge-workshop-sub:#1e3a5f;
     --pill-bg:transparent;--pill-border:#64748b;--pill-text:#cbd5e1;--pill-hover-bg:#334155;
     --toggle-bg:#334155;--toggle-knob:#0f172a;--abstract-border:#1e3a5f;
     --navbar-bg:rgba(15,23,42,0.92);
@@ -63,10 +65,11 @@ section h2{font-size:1.6rem;font-weight:300;letter-spacing:-.01em;margin-bottom:
 .pub-year-heading:first-of-type{margin-top:.5rem}
 .pub-list{list-style:none}
 .pub-list>li{display:flex;gap:1.2rem;margin-bottom:1.8rem;align-items:flex-start}
-.pub-badge-col{flex-shrink:0;width:72px;padding-top:.1rem}
+.pub-badge-col{flex-shrink:0;width:80px;padding-top:.1rem}
 .pub-venue-badge{display:inline-block;background:var(--badge-bg);color:var(--badge-text);font-size:.65rem;font-weight:500;padding:.2rem .5rem;border-radius:3px;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap}
 .pub-venue-badge.review{background:var(--badge-review-bg);font-size:.52rem;padding:.15rem .3rem}
-.pub-venue-badge.workshop{background:var(--badge-workshop-bg);color:var(--badge-workshop-text)}
+.pub-venue-badge.workshop{background:var(--badge-workshop-bg);color:var(--badge-workshop-text);text-align:center;line-height:1.25;padding:.2rem .45rem}
+.pub-venue-badge.workshop .badge-sub{display:block;font-size:.5rem;font-weight:400;letter-spacing:.06em;color:var(--badge-workshop-sub);margin-top:.02rem}
 .pub-content{flex:1;min-width:0}
 .pub-title{font-weight:500;font-size:.95rem;color:var(--text-primary);line-height:1.5}
 .pub-authors{font-size:.88rem;color:var(--text-secondary);margin-top:.15rem}
@@ -93,8 +96,9 @@ button.pub-pill{border:1px solid var(--pill-border)}
     .profile-header{flex-direction:column;align-items:center;text-align:center}
     .profile-pic{width:140px;height:140px}
     .social-row{justify-content:center}
-    .pub-badge-col{width:55px}
+    .pub-badge-col{width:62px}
     .pub-venue-badge{font-size:.55rem;padding:.15rem .35rem}
+    .pub-venue-badge.workshop .badge-sub{font-size:.45rem}
     .navbar-nav{gap:1rem}
     .navbar-right{gap:1rem}
 }
