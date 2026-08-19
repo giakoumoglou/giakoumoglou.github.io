@@ -1,0 +1,11 @@
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+
+# Deploy previews for pull requests get a distinct base URL, so nothing
+# accidentally points at the production domain.
+[context.deploy-preview.build]
+  command = "bundle exec jekyll build --baseurl \"\""

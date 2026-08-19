@@ -1,6 +1,6 @@
 title: Nikos Giakoumoglou
 description: Research Postgraduate at Imperial College London
-url: "https://giakoumoglou.github.io"
+url: "https://giakoumoglou.com"
 baseurl: ""
 
 markdown: kramdown
@@ -11,4 +11,5 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - netlify.toml
   - vendor

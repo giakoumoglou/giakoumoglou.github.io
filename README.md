@@ -1,11 +1,14 @@
-# giakoumoglou.github.io
+# giakoumoglou.com
 
-Personal site. All content lives in `_data/`. GitHub rebuilds and publishes the
-site automatically on every push, so editing a YAML file in the GitHub web
-editor is enough to update the live page. It goes live in roughly a minute.
+Personal site, live at <https://giakoumoglou.com>.
+
+All content lives in `_data/`. Netlify rebuilds and publishes on every push to
+GitHub, so editing a YAML file in the GitHub web editor is enough to update the
+live page. It goes live in roughly a minute.
 
 ```
 _config.yml              Jekyll settings
+netlify.toml             Netlify build settings
 index.html               page structure (rarely needs editing)
 _includes/               the template for one publication entry
 assets/
@@ -83,9 +86,9 @@ Add a new publisher by adding three lines to `_data/linktypes.yml`. Any
 
 ## Notes
 
-- Do **not** add a `.nojekyll` file. It switches the build off.
 - If a YAML edit has a syntax error the build fails and the site keeps serving
-  the previous version. GitHub emails you. The usual culprit is an unquoted
+  the previous version. Netlify emails you and the log shows the offending
+  line under Deploys. The usual culprit is an unquoted
   value containing a colon, as in `title: SynCo: Synthetic...`. Wrap the whole
   value in double quotes when it contains `:` or starts with `@`.
 - `abstract` is rendered as HTML, so write `&amp;` for a literal ampersand and
