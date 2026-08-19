@@ -2,7 +2,6 @@
 
 - key: giakoumoglou2026three
   status: accepted
-  type: workshop
   year: 2026
   badge: ECCV
   title: Three Necessary Principles for Self-Supervised Visual Representation Learning
@@ -22,7 +21,6 @@
 
 - key: giakoumoglou2026discriminative
   status: accepted
-  type: workshop
   year: 2026
   badge: ECCV
   title: Discriminative and Consistent Representation Distillation
@@ -42,7 +40,6 @@
 
 - key: varvarigos2026open
   status: accepted
-  type: workshop
   year: 2026
   badge: ICIP
   title: Open-World Semantic Segmentation with Sensitivity Modeling
@@ -136,7 +133,6 @@
 
 - key: papadopoulos2025mitigating
   status: accepted
-  type: workshop
   year: 2025
   badge: NeurIPS
   title: Mitigating Representation Bottlenecks in Multiple Instance Learning
@@ -179,7 +175,6 @@
 
 - key: giakoumoglou2025fake
   status: accepted
-  type: workshop
   year: 2025
   badge: ICCV
   title: Training Self-Supervised Vision Transformers with Synthetic Data and Synthetic Hard Negatives
@@ -202,7 +197,6 @@
 
 - key: giakoumoglou2025unsupervised
   status: accepted
-  type: workshop
   year: 2025
   badge: CVPR
   title: Unsupervised Training of Vision Transformers with Synthetic Negatives
