@@ -1,7 +1,7 @@
 [data-theme="light"] {
     --blue-accent:#2563eb;--blue-light:#dbeafe;--text-primary:#1a1a2e;--text-secondary:#4a4a6a;
     --text-muted:#6b7280;--bg-body:#fff;--bg-card:#f8fafc;--border-color:#e5e7eb;
-    --link-color:#2563eb;--link-hover:#1d4ed8;--badge-bg:#2563eb;--badge-text:#fff; --badge-workshop-bg:#60a5fa;--badge-workshop-text:#fff;
+    --link-color:#2563eb;--link-hover:#1d4ed8;--badge-bg:#2563eb;--badge-text:#fff; --badge-workshop-bg:#60a5fa;--badge-workshop-text:#fff; --badge-workshop-bg:#60a5fa;--badge-workshop-text:#fff;--badge-workshop-sub:#e0edfe;
     --badge-review-bg:#6b7280;--bib-bg:#f1f5f9;--bib-border:#e2e8f0;
     --pill-bg:transparent;--pill-border:#9ca3af;--pill-text:#374151;--pill-hover-bg:#f3f4f6;
     --toggle-bg:#e5e7eb;--toggle-knob:#fff;--abstract-border:#dbeafe;
