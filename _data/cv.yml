@@ -1,0 +1,26 @@
+interests:
+  - Computer Vision
+  - Deep Learning
+  - Self-supervised Learning
+
+education:
+  - title: Imperial College London, London, United Kingdom
+    detail: PhD in Electrical and Electronic Engineering, supervised by Prof. Tania Stathaki
+    date: January 2024 &mdash; Present
+
+  - title: Aristotle University of Thessaloniki, Thessaloniki, Greece
+    detail: "Integrated MSc in Electrical and Computer Engineering, GPA: 8.91/10.00"
+    date: September 2016 &mdash; November 2021
+
+teaching:
+  - title: Graduate Teaching Assistant
+    detail: Lab demonstrator for Digital Image Processing (ELEC70078)
+    date: September 2024 &mdash; Present
+
+service:
+  - title: Reviewer
+    detail: >
+      ICML 2026, IJCNN 2026, ECCV 2026, CVPR 2026, WACV 2026, VISAPP 2026,
+      AAAI 2026, ISBI 2026, ICCV 2025, BMVC 2025 (Exceptional Reviewer),
+      ICASSP 2025, ICIP 2025, WACV 2025, DSP 2025, CVPR 2025, CVPR 2024,
+      Smart Agriculture Technology (ScienceDirect), Agriculture (MDPI), and more.

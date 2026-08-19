@@ -1,0 +1,136 @@
+---
+layout: null
+---
+{%- assign profile = site.data.profile -%}
+{%- assign accepted = site.data.publications | where: "status", "accepted" -%}
+{%- assign review = site.data.publications | where: "status", "review" -%}
+{%- assign years = accepted | map: "year" | uniq | sort | reverse -%}
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ profile.name }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<nav class="navbar"><div class="container">
+    <a href="#home" class="navbar-brand">{{ profile.name }}</a>
+    <div class="navbar-right">
+        <ul class="navbar-nav">
+            <li><a href="#home" class="active">about</a></li>
+            <li><a href="#news">news</a></li>
+            <li><a href="#accepted-papers">publications</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+            <span class="theme-toggle-icon sun-icon"><i class="fa-solid fa-sun"></i></span>
+            <span class="theme-toggle-icon moon-icon"><i class="fa-solid fa-moon"></i></span>
+        </button>
+    </div>
+</div></nav>
+
+<div class="container">
+
+<section id="home" class="profile-section">
+    <div class="profile-header">
+        <img src="/assets/{{ profile.photo }}" alt="{{ profile.name }}" class="profile-pic">
+        <div class="profile-info">
+            <h1>{{ profile.name }}</h1>
+            <p class="subtitle">{% include inline-md.html text=profile.subtitle %}</p>
+            <div class="social-row">
+                {%- for s in profile.social %}
+                <a href="{{ s.url }}" title="{{ s.title }}"><i class="{{ s.icon }}"></i></a>
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="profile-bio">
+        {{ profile.bio | markdownify }}
+    </div>
+</section>
+
+<section id="news">
+    <h2>News</h2>
+    <table class="news-table">
+        {%- for item in site.data.news %}
+        <tr><td class="news-date">{{ item.date }}</td><td class="news-text">{% include inline-md.html text=item.text %}</td></tr>
+        {%- endfor %}
+    </table>
+</section>
+
+<section id="interests">
+    <h2>Research Interests</h2>
+    <ul class="interests-list">
+        {%- for i in site.data.cv.interests %}
+        <li>{{ i }}</li>
+        {%- endfor %}
+    </ul>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    {%- for e in site.data.cv.education %}
+    <div class="education-item">
+        <div class="edu-title">{{ e.title }}</div>
+        <div class="edu-detail">{% include inline-md.html text=e.detail %}</div>
+        <div class="edu-date">{{ e.date }}</div>
+    </div>
+    {%- endfor %}
+</section>
+
+<section id="teaching">
+    <h2>Teaching Experience</h2>
+    {%- for e in site.data.cv.teaching %}
+    <div class="education-item">
+        <div class="edu-title">{{ e.title }}</div>
+        <div class="edu-detail">{% include inline-md.html text=e.detail %}</div>
+        <div class="edu-date">{{ e.date }}</div>
+    </div>
+    {%- endfor %}
+</section>
+
+<section id="accepted-papers">
+    <h2>Accepted Papers for Publication</h2>
+    {%- for y in years %}
+    <h3 class="pub-year-heading">{{ y }}</h3>
+    <ol class="pub-list">
+        {%- assign pubs = accepted | where: "year", y -%}
+        {%- for p in pubs %}
+        {% include publication.html pub=p %}
+        {%- endfor %}
+    </ol>
+    {%- endfor %}
+</section>
+
+<section id="under-review">
+    <h2>Under Review</h2>
+    <ol class="pub-list">
+        {%- for p in review %}
+        {% include publication.html pub=p %}
+        {%- endfor %}
+    </ol>
+</section>
+
+<section id="responsibility">
+    <h2>Positions of Responsibility</h2>
+    {%- for e in site.data.cv.service %}
+    <div class="education-item">
+        <div class="edu-title">{{ e.title }}</div>
+        <div class="edu-detail">{% include inline-md.html text=e.detail %}</div>
+    </div>
+    {%- endfor %}
+</section>
+
+</div>
+
+<footer class="site-footer"><div class="container">&copy; {{ 'now' | date: "%Y" }} Nikolaos Giakoumoglou</div></footer>
+
+<script src="/assets/main.js"></script>
+</body>
+</html>

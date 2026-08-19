@@ -1,0 +1,30 @@
+{%- assign pub = include.pub -%}
+<li>
+    <div class="pub-badge-col"><span class="pub-venue-badge{% if pub.status == 'review' %} review{% endif %}">{{ pub.badge }}</span></div>
+    <div class="pub-content">
+        <div class="pub-title">{{ pub.title }}</div>
+        <div class="pub-authors">{{ pub.authors }}</div>
+        <div class="pub-venue-text">{{ pub.venue }}</div>
+        <div class="pub-links">
+            {%- for l in pub.links -%}
+            {%- assign t = site.data.linktypes[l.type] -%}
+            {%- if l.url -%}{%- assign href = l.url -%}{%- else -%}{%- assign href = t.url | replace: '{id}', l.id -%}{%- endif -%}
+            {%- assign label = l.label | default: t.label -%}
+            {%- assign icon = l.icon | default: t.icon -%}
+            <a class="pub-pill" href="{{ href }}" target="_blank" rel="noopener"><i class="{{ icon }}" aria-hidden="true"></i>{{ label }}</a>
+            {%- endfor -%}
+            {%- if pub.bib %}
+            <button class="pub-pill" onclick="toggleDrop(this,'bib')" data-icon='<i class="fa-solid fa-quote-left" aria-hidden="true"></i>'><i class="fa-solid fa-quote-left" aria-hidden="true"></i>Bib</button>
+            {%- endif -%}
+            {%- if pub.abstract %}
+            <button class="pub-pill" onclick="toggleDrop(this,'abstract')" data-icon='<i class="fa-solid fa-bars" aria-hidden="true"></i>'><i class="fa-solid fa-bars" aria-hidden="true"></i>Abstract</button>
+            {%- endif %}
+        </div>
+        {%- if pub.abstract %}
+        <div class="pub-abstract">{{ pub.abstract | strip }}</div>
+        {%- endif -%}
+        {%- if pub.bib %}
+        <div class="bib-block">{{- pub.bib | strip | escape -}}</div>
+        {%- endif %}
+    </div>
+</li>

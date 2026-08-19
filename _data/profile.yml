@@ -1,0 +1,35 @@
+name: Nikos Giakoumoglou
+photo: nikos.jpg
+
+subtitle: 'Research Postgraduate at [Imperial College London](https://profiles.imperial.ac.uk/n.giakoumoglou23/about)'
+
+bio: >
+  Nikos Giakoumoglou is currently a postgraduate researcher at Imperial College
+  London in the Department of Electrical and Electronic Engineering (EEE) in the
+  Communications and Signal Processing (CSP) group, where he is pursuing his PhD
+  under the guidance of Professor
+  [Tania Stathaki](https://profiles.imperial.ac.uk/t.stathaki). Before his
+  current role, he worked as a Research Assistant at the Centre for Research and
+  Technology Hellas (CERTH) in the Information Technologies Institute (ITI)
+  department. He obtained his Diploma in Electrical and Computer Engineering in
+  2021 from the Department of Electrical &amp; Computer Engineering at Aristotle
+  University of Thessaloniki. Nikos' research is primarily focused on Artificial
+  Intelligence, Machine Learning, and Deep Learning, with a special interest in
+  applications within the field of Computer Vision.
+
+social:
+  - title: Email
+    icon: fa-solid fa-envelope
+    url: mailto:nikos@imperial.ac.uk
+  - title: Google Scholar
+    icon: ai ai-google-scholar
+    url: https://scholar.google.com/citations?user=bDAQu54AAAAJ&hl=en
+  - title: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com/giakoumoglou/
+  - title: LinkedIn
+    icon: fa-brands fa-linkedin
+    url: https://www.linkedin.com/in/nikolaos-giakoumoglou/
+  - title: Imperial Profile
+    icon: fa-solid fa-building-columns
+    url: https://profiles.imperial.ac.uk/n.giakoumoglou23/about

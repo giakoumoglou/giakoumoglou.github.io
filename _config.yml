@@ -1,0 +1,14 @@
+title: Nikos Giakoumoglou
+description: Research Postgraduate at Imperial College London
+url: "https://giakoumoglou.github.io"
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

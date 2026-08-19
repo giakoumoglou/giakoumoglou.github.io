@@ -1,0 +1,231 @@
+# ACCEPTED
+
+- key: giakoumoglou2026plantreview
+  status: accepted
+  year: 2026
+  badge: MDPI
+  title: A Review on Artificial Intelligence Methods for Plant Disease and Pest Detection
+  authors: N. Giakoumoglou, D. Kapetas, K. M. Papadopoulos, P. Christakakis, T. Stathaki, E. M. Pechlivani
+  venue: In AI and Precision Agriculture, 2026
+  links:
+    - {type: mdpi, id: "3043-1204/1/1/2", label: MDPI}
+  abstract: >
+    Artificial intelligence (AI) has emerged as a transformative tool for plant health monitoring, offering new opportunities for scalable, timely, and data-driven pest and disease management in agriculture. This review provides a comprehensive synthesis of AI-based methods for pest and plant disease detection, systematically organizing existing literature across sensing modalities, learning paradigms, and deployment scales. We distinguish between population-level pest monitoring, plant-centric visual inspection, and field-scale surveillance, as well as between post-symptomatic disease recognition and pre-symptomatic detection enabled by spectral imaging technologies. Beyond summarizing recent advances, this work places strong emphasis on critical analysis, discussing fundamental limitations related to data scarcity, domain shift, generalization under field conditions, and the challenge of disentangling biotic from abiotic stress factors. The review further examines the distinction between correlation-driven AI predictions and causal disease understanding, positioning AI as a complementary decision-support tool alongside established diagnostic methods. Building on these insights, we outline key future research directions, including multimodal sensor fusion, explainable and trustworthy AI, edge-based deployment for real-time monitoring, and the development of foundation models for unified agricultural intelligence. This review aims to serve as both an accessible entry point and a critical reference for advancing AI-driven plant health management.
+  bib: |
+    @article{giakoumoglou2026plantreview,
+      title={{A Review on Artificial Intelligence Methods for Plant Disease and Pest Detection}},
+      author={Giakoumoglou, Nikolaos and Kapetas, Dimitrios and Papadopoulos, Kleanthis Marios and Christakakis, Panagiotis and Stathaki, Tania and Pechlivani, Eleftheria Maria},
+      journal={AI and Precision Agriculture},
+      volume={1},
+      number={1},
+      pages={2},
+      year={2026},
+      doi={10.3390/aipa1010002},
+      publisher={MDPI}
+    }
+
+- key: papadopoulos2026expert
+  status: accepted
+  year: 2026
+  badge: ISBI
+  title: Expert Clustering and Knowledge Transfer for Whole Slide Image Classification
+  authors: K. M. Papadopoulos, N. Giakoumoglou, A. Floros, P. L. Dragotti, T. Stathaki
+  venue: In ISBI (Oral), 2026
+  links:
+    - {type: ieee, id: "11515371"}
+    - {type: code, id: MariosPapadopoulos/DnD_MIL}
+  abstract: >
+    Multiple Instance Learning (MIL) is widely adopted for Whole Slide Image (WSI) classification. Existing MIL methods suffer from representation bottlenecks where slide-level aggregation compresses diverse patch information, limiting performance. Our proposed Divide-and-Distill (D&amp;D) framework addresses this by partitioning the feature space into representation-coherent clusters, training specialized expert models on each cluster, and distilling their collective knowledge into a unified model. Experiments across three datasets and six MIL methods demonstrate consistent performance gains without added inference cost.
+  bib: |
+    @inproceedings{papadopoulos2026expert,
+      author={Papadopoulos, Kleanthis Marios and Giakoumoglou, Nikolaos and Floros, Andreas and Dragotti, Pier Luigi and Stathaki, Tania},
+      booktitle={2026 IEEE 23rd International Symposium on Biomedical Imaging (ISBI)},
+      title={Expert Clustering and Knowledge Transfer for Whole Slide Image Classification},
+      year={2026},
+      volume={},
+      number={},
+      pages={1-5},
+      keywords={Modeling;Training;Labeling;Printing;Learning (artificial intelligence);Equations;Pathology;Accuracy;Imaging;Digital Pathology;Knowledge Distillation, Multiple Instance Learning;Representation Bottleneck},
+      doi={10.1109/ISBI61048.2026.11515371}}
+
+- key: iijima2024caption
+  status: accepted
+  year: 2026
+  badge: VISAPP
+  title: A Multimodal Approach for Cross-Domain Image Retrieval
+  authors: L. Iijima, N. Giakoumoglou and T. Stathaki
+  venue: In VISAPP, 2026
+  links:
+    - {type: scitepress, id: "10.5220/0014460000004084"}
+    - {type: arxiv, id: "2403.15152"}
+  abstract: >
+    Cross-Domain Image Retrieval (CDIR) is a challenging task in computer vision, aiming to match images across different visual domains such as sketches, paintings, and photographs. This paper introduces a novel unsupervised approach to CDIR that incorporates textual context by leveraging pre-trained vision-language models. Our method, dubbed as Caption-Matching (CM), uses generated image captions as a domain-agnostic intermediate representation, enabling effective cross-domain similarity computation without the need for labeled data or fine-tuning. We evaluate our method on standard CDIR benchmark datasets, demonstrating state-of-the-art performance in unsupervised settings with improvements of 24.0% on Office-Home and 132.2% on DomainNet over previous methods.
+  bib: |
+    @conference{iijima2024caption,
+    author={Lucas Iijima and Nikolaos Giakoumoglou and Tania Stathaki},
+    title={Caption-Matching: A Multimodal Approach for Cross-Domain Image Retrieval},
+    booktitle={Proceedings of the 21st International Conference on Computer Vision Theory and Applications - Volume 3: VISAPP},
+    year={2026},
+    pages={600-607},
+    publisher={SciTePress},
+    organization={INSTICC},
+    doi={10.5220/0014460000004084},
+    isbn={978-989-758-804-4},
+    issn={2184-4321},
+    }
+
+- key: papadopoulos2025mitigating
+  status: accepted
+  year: 2025
+  badge: NeurIPS
+  title: Mitigating Representation Bottlenecks in Multiple Instance Learning
+  authors: K. M. Papadopoulos, N. Giakoumoglou, A. Floros, T. Stathaki
+  venue: In NeurIPS Workshop "MedEurIPS" (non-archival), 2025
+  links:
+    - {type: openreview, id: nywAT7N8Do}
+  abstract: >
+    Multiple Instance Learning (MIL) is widely used for Whole Slide Image classification in computational pathology, yet existing approaches suffer from a representation bottleneck where diverse patch-level features are compressed into a single slide-level embedding. We propose Divide-and-Distill (D&amp;D), which clusters the feature space into coherent regions, trains expert models on each cluster, and distills their knowledge into a unified model. Experiments demonstrate that D&amp;D consistently improves six state-of-the-art MIL methods in both accuracy and AUC while maintaining single-model inference efficiency.
+  bib: |
+    @inproceedings{papadopoulos2025mitigating,
+      title={{Mitigating Representation Bottlenecks in Multiple Instance Learning}},
+      author={Papadopoulos, Kleanthis Marios and Giakoumoglou, Nikolaos and Floros, Andreas and Dragotti, Pier Luigi and Stathaki, Tania},
+      booktitle={Medical Imaging meets NeurIPS Workshop (MedNeurIPS)},
+      year={2025},
+      url={https://openreview.net/forum?id=nywAT7N8Do}
+    }
+
+- key: giakoumoglou2025cluster
+  status: accepted
+  year: 2025
+  badge: ICIP
+  title: Cluster Contrast for Unsupervised Visual Representation Learning
+  authors: N. Giakoumoglou, T. Stathaki
+  venue: In ICIP, 2025
+  links:
+    - {type: ieee, id: "11084524"}
+    - {type: arxiv, id: "2507.12359"}
+  abstract: >
+    We introduce Cluster Contrast (CueCo), a novel approach to unsupervised visual representation learning that effectively combines the strengths of contrastive learning and clustering methods. CueCo is designed to simultaneously scatter and align feature representations within the feature space. Our method achieves 91.40% top-1 classification accuracy on CIFAR-10, 68.56% on CIFAR-100, and 78.65% on ImageNet-100 using linear evaluation with a ResNet-18 backbone.
+  bib: |
+    @inproceedings{giakoumoglou2025cluster,
+      title={{Cluster Contrast for Unsupervised Visual Representation Learning}},
+      author={Giakoumoglou, Nikolaos and Stathaki, Tania},
+      booktitle={2025 IEEE International Conference on Image Processing (ICIP)},
+      pages={133--138},
+      year={2025},
+      organization={IEEE}
+    }
+
+- key: giakoumoglou2025fake
+  status: accepted
+  year: 2025
+  badge: ICCV
+  title: Training Self-Supervised Vision Transformers with Synthetic Data and Synthetic Hard Negatives
+  authors: N. Giakoumoglou, A. Floros, K. M. Papadopoulos, T. Stathaki
+  venue: In ICCV Workshop "LIMIT" (non-archival), 2025
+  links:
+    - {type: openreview, id: TJUfbYKo2c}
+    - {type: arxiv, id: "2509.02029"}
+    - {type: code, id: giakoumoglou/synco-v2}
+  abstract: >
+    We build on existing self-supervised learning approaches for vision, drawing inspiration from the adage "fake it till you make it". We investigate two forms of "faking it" in vision transformers: leveraging synthetic data from generative models and generating synthetic hard negatives in the representation space. Our framework, dubbed Syn2Co, combines both approaches and evaluates whether synthetically enhanced training can lead to more robust and transferable visual representations on DeiT-S and Swin-T architectures.
+  bib: |
+    @inproceedings{giakoumoglou2025fake,
+    title={{Fake \& Square: Training Self-Supervised Vision Transformers with Synthetic Data and Synthetic Hard Negatives}},
+    author={Nikolaos Giakoumoglou and Andreas Floros and Kleanthis Marios Papadopoulos and Tania Stathaki},
+    booktitle={Representation Learning with Very Limited Resources: When Data, Modalities, Labels, and Computing Resources are Scarce},
+    year={2025},
+    url={https://openreview.net/forum?id=TJUfbYKo2c}
+    }
+
+- key: giakoumoglou2025unsupervised
+  status: accepted
+  year: 2025
+  badge: CVPR
+  title: Unsupervised Training of Vision Transformers with Synthetic Negatives
+  authors: N. Giakoumoglou, A. Floros, K. M. Papadopoulos, T. Stathaki
+  venue: In CVPR Workshop "Visual Concepts" (non-archival), 2025
+  links:
+    - {type: openreview, id: dg8FuaOKnC}
+    - {type: arxiv, id: "2509.02024"}
+    - {type: code, id: giakoumoglou/synco-v2}
+  abstract: >
+    We address the neglected potential of hard negative samples in self-supervised learning. Previous works explored synthetic hard negatives but rarely in the context of vision transformers. We build on this observation and integrate synthetic hard negatives to improve vision transformer representation learning. This simple yet effective technique notably improves the discriminative power of learned representations. Our experiments show performance improvements for both DeiT-S and Swin-T architectures.
+  bib: |
+    @inproceedings{giakoumoglou2025unsupervised,
+        title={{Unsupervised Training of Vision Transformers with Synthetic Negatives}},
+        author={Nikolaos Giakoumoglou and Andreas Floros and Kleanthis Marios Papadopoulos and Tania Stathaki},
+        booktitle={Second Workshop on Visual Concepts},
+        year={2025},
+        url={https://openreview.net/forum?id=dg8FuaOKnC},
+    }
+
+# UNDER REVIEW
+
+- key: giakoumoglou2024synco
+  status: review
+  year: 2024
+  badge: Under Review
+  title: "SynCo: Synthetic Hard Negatives for Contrastive Visual Representation Learning"
+  authors: N. Giakoumoglou and T. Stathaki
+  venue: Under review
+  links:
+    - {type: arxiv, id: "2410.02401"}
+    - {type: code, id: giakoumoglou/synco}
+  abstract: >
+    Contrastive learning has become a dominant approach in self-supervised visual representation learning, but efficiently leveraging hard negatives, which are samples closely resembling the anchor, remains challenging. We introduce SynCo (Synthetic negatives in Contrastive learning), a novel approach that improves model performance by generating synthetic hard negatives in the representation space. Building on the MoCo framework, SynCo introduces six strategies for creating diverse synthetic hard negatives "on-the-fly" with minimal computational overhead. SynCo achieves faster training and strong representation learning, surpassing MoCo-v2 by +0.4% and MoCHI by +1.0% on ImageNet ILSVRC-2012 linear evaluation. It also transfers more effectively to detection tasks, achieving strong results on PASCAL VOC detection (57.2% AP) and significantly improving over MoCo-v2 on COCO detection (+1.0% AP<sup>bb</sup>) and instance segmentation (+0.8% AP<sup>msk</sup>).
+  bib: |
+    @misc{giakoumoglou2024synco,
+          title={{SynCo: Synthetic Hard Negatives for Contrastive Visual Representation Learning}},
+          author={Nikolaos Giakoumoglou and Tania Stathaki},
+          year={2024},
+          eprint={2410.02401},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2410.02401},
+    }
+
+- key: giakoumoglou2024rrd
+  status: review
+  year: 2024
+  badge: Under Review
+  title: Relational Representation Distillation
+  authors: N. Giakoumoglou and T. Stathaki
+  venue: Under review
+  links:
+    - {type: arxiv, id: "2407.12073"}
+    - {type: code, id: giakoumoglou/rrd}
+  abstract: >
+    Knowledge distillation transfers knowledge from large, high-capacity teacher models to more compact student networks. We propose Relational Representation Distillation (RRD) that preserves the relative relationships among instances rather than enforcing absolute separation. Our method introduces separate temperature parameters for teacher and student distributions, creating an implicit information bottleneck that preserves fine-grained relational structure while avoiding the over-separation characteristic of contrastive losses. We establish theoretical connections showing that InfoNCE emerges as a limiting case of our objective when the teacher temperature approaches 0, and empirically demonstrate superior relational alignment and generalization across classification and detection tasks.
+  bib: |
+    @misc{giakoumoglou2024rrd,
+          title={{Relational Representation Distillation}},
+          author={Nikolaos Giakoumoglou and Tania Stathaki},
+          year={2024},
+          eprint={2407.12073},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2407.12073},
+    }
+
+- key: giakoumoglou2024review
+  status: review
+  year: 2025
+  badge: Under Review
+  title: A Review on Discriminative Self-supervised Learning Methods
+  authors: N. Giakoumoglou, T. Stathaki, A. Gkelias
+  venue: Under review
+  links:
+    - {type: arxiv, id: "2405.04969"}
+  abstract: >
+    Self-supervised learning (SSL) has rapidly emerged as a transformative approach in computer vision, enabling the extraction of rich feature representations from vast amounts of unlabeled data and reducing reliance on costly manual annotations. This review presents a comprehensive analysis of discriminative SSL methods, which focus on learning representations by solving pretext tasks that do not require human labels. The paper systematically categorizes discriminative SSL approaches into five main groups: contrastive methods, clustering methods, self-distillation methods, knowledge distillation methods, and feature decorrelation methods. For each category, the review details the underlying principles, architectural components, loss functions, and representative algorithms, highlighting their unique mechanisms and contributions to the field. Extensive comparative evaluations are provided, including linear and semi-supervised protocols on standard benchmarks such as ImageNet, as well as transfer learning performance across diverse downstream tasks. The review also discusses theoretical foundations, scalability, efficiency, and practical challenges, such as computational demands and accessibility. By synthesizing recent advancements and identifying key trends, open challenges, and future research directions, this work serves as a valuable resource for researchers and practitioners aiming to leverage discriminative SSL for robust and generalizable computer vision models.
+  bib: |
+    @misc{giakoumoglou2024review,
+          title={{A Review on Discriminative Self-supervised Learning Methods in Computer Vision}},
+          author={Nikolaos Giakoumoglou and Tania Stathaki and Athanasios Gkelias},
+          year={2025},
+          eprint={2405.04969},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2405.04969},
+    }

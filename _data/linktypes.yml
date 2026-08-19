@@ -1,0 +1,38 @@
+arxiv:
+  label: arXiv
+  icon: ai ai-arxiv
+  url: "https://arxiv.org/abs/{id}"
+
+code:
+  label: Code
+  icon: fa-brands fa-github
+  url: "https://github.com/{id}"
+
+openreview:
+  label: OpenReview
+  icon: fa-regular fa-file-lines
+  url: "https://openreview.net/forum?id={id}"
+
+ieee:
+  label: IEEE
+  icon: ai ai-ieee
+  url: "https://ieeexplore.ieee.org/abstract/document/{id}"
+
+mdpi:
+  label: MDPI
+  icon: fa-solid fa-globe
+  url: "https://www.mdpi.com/{id}"
+
+scitepress:
+  label: SciTePress
+  icon: fa-solid fa-layer-group
+  url: "https://www.scitepress.org/Link.aspx?doi={id}"
+
+doi:
+  label: DOI
+  icon: fa-solid fa-link
+  url: "https://doi.org/{id}"
+
+web:
+  label: Link
+  icon: fa-solid fa-globe
