@@ -1,5 +1,39 @@
 # ACCEPTED
 
+- key: giakoumoglou2026three
+  status: accepted
+  year: 2026
+  badge: ECCV
+  title: Three Necessary Principles for Self-Supervised Visual Representation Learning
+  authors: N. Giakoumoglou, P. Giakoumoglou, T. Stathaki
+  venue: In ECCV Workshop "UniWorld", 2026
+  links:
+    - {type: arxiv, id: "2608.08309"}
+  bib: |
+    @inproceedings{giakoumoglou2026three,
+      title={{Three Necessary Principles for Self-Supervised Visual Representation Learning}},
+      author={Giakoumoglou, Nikolaos and Giakoumoglou, Panagiotis and Stathaki, Tania},
+      booktitle={ECCV Workshop on Universal Representations for Perception, Reasoning, and World Modeling (UniWorld)},
+      year={2026}
+    }
+
+- key: giakoumoglou2026discriminative
+  status: accepted
+  year: 2026
+  badge: ECCV
+  title: Discriminative and Consistent Representation Distillation
+  authors: N. Giakoumoglou, T. Stathaki
+  venue: In ECCV Workshop "MELEX", 2026
+  links:
+    - {type: arxiv, id: "2407.11802"}
+  bib: |
+    @inproceedings{giakoumoglou2026discriminative,
+      title={{Discriminative and Consistent Representation Distillation}},
+      author={Giakoumoglou, Nikolaos and Stathaki, Tania},
+      booktitle={ECCV 3rd Workshop on More Exploration, Less Exploitation (MELEX)},
+      year={2026}
+    }
+
 - key: giakoumoglou2026plantreview
   status: accepted
   year: 2026
@@ -24,6 +58,23 @@
       publisher={MDPI}
     }
 
+- key: varvarigos2026open
+  status: accepted
+  year: 2026
+  badge: ICIP
+  title: Open-World Semantic Segmentation with Sensitivity Modeling
+  authors: A. R. Varvarigos, N. Giakoumoglou, T. Stathaki
+  venue: In ICIP Satellite Workshop "M-PaSTIVE", 2026
+  links:
+    - {type: arxiv, id: "2608.08308"}
+  bib: |
+    @inproceedings{varvarigos2026open,
+      title={{Open-World Semantic Segmentation with Sensitivity Modeling}},
+      author={Varvarigos, Anastasios Romanos and Giakoumoglou, Nikolaos and Stathaki, Tania},
+      booktitle={ICIP Workshop on Multimodal Perception and Skill Training in Immersive Virtual Environments (M-PaSTIVE)},
+      year={2026}
+    }
+
 - key: papadopoulos2026expert
   status: accepted
   year: 2026
@@ -40,7 +91,7 @@
     @inproceedings{papadopoulos2026expert,
       author={Papadopoulos, Kleanthis Marios and Giakoumoglou, Nikolaos and Floros, Andreas and Dragotti, Pier Luigi and Stathaki, Tania},
       booktitle={2026 IEEE 23rd International Symposium on Biomedical Imaging (ISBI)},
-      title={Expert Clustering and Knowledge Transfer for Whole Slide Image Classification},
+      title={{Expert Clustering and Knowledge Transfer for Whole Slide Image Classification}},
       year={2026},
       volume={},
       number={},
@@ -63,7 +114,7 @@
   bib: |
     @conference{iijima2024caption,
     author={Lucas Iijima and Nikolaos Giakoumoglou and Tania Stathaki},
-    title={Caption-Matching: A Multimodal Approach for Cross-Domain Image Retrieval},
+    title={{Caption-Matching: A Multimodal Approach for Cross-Domain Image Retrieval}},
     booktitle={Proceedings of the 21st International Conference on Computer Vision Theory and Applications - Volume 3: VISAPP},
     year={2026},
     pages={600-607},
