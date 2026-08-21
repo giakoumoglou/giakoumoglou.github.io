@@ -12,11 +12,14 @@
   abstract: >
     We argue that learning visual representations without labels requires a training signal jointly complete across three non-overlapping objectives: semantic invariance across augmented views, patch-level spatial prediction, and representational non-degeneracy. We formalize these as the observation, prediction, and regularization principles and prove (i) that combining observation and prediction without regularization admits the constant encoder as a global minimizer under negative-free alignment; (ii) that the two objectives are gradient-complementary and structurally non-conflicting at the encoder output; and (iii) that the momentum encoder converges to the same fixed point as the online encoder and provides no collapse guarantee at convergence. Contrastive alignment provides only self-limiting collapse resistance, formalized via an explicit gradient-decay argument. Dropping prediction withholds the spatial training signal by construction; dropping observation forfeits cross-view semantic invariance by construction; at the scale we study, no pair substitutes for the third. Every major self-supervised method is a special case of a single unified energy decomposition. We pair every theoretical claim with a controlled experiment, including a patch-retrieval evaluation for the spatial consequence of prediction.
   bib: |
-    @inproceedings{giakoumoglou2026three,
-      title={{Three Necessary Principles for Self-Supervised Visual Representation Learning}},
-      author={Giakoumoglou, Nikolaos and Giakoumoglou, Panagiotis and Stathaki, Tania},
-      booktitle={ECCV Workshop on Universal Representations for Perception, Reasoning, and World Modeling (UniWorld)},
-      year={2026}
+    @misc{giakoumoglou2026three,
+          title={Three Necessary Principles for Self-Supervised Visual Representation Learning}, 
+          author={Nikos Giakoumoglou and Paschalis Giakoumoglou and Tania Stathaki},
+          year={2026},
+          eprint={2608.08309},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2608.08309}, 
     }
 
 - key: giakoumoglou2026discriminative
@@ -31,11 +34,14 @@
   abstract: >
     Knowledge Distillation (KD) transfers knowledge from a large teacher to a smaller student model. While contrastive objectives have proven effective for learning structured representations in self-supervised settings, their use in distillation is hindered by two practical shortcomings: the reliance on external memory banks for negative sampling, and fixed temperature hyperparameters that limit adaptability across training stages and teacher-student pairs. We therefore propose Discriminative and Consistent Representation Distillation (DCD), which combines contrastive instance discrimination with a consistency regularization term over the cross-model similarity matrix. The contrastive term aligns each student representation with its teacher counterpart, while the consistency term penalizes asymmetry between the row-normalized and column-normalized views of that matrix, constraining the off-diagonal structure that instance discrimination alone leaves free; we show that it vanishes precisely when this matrix is symmetric. We further introduce an efficient in-batch sampling that eliminates external memory banks, and learnable scale and bias parameters that adapt during training to control the sharpness and offset of the distillation signal. The method matches the training speed of standard KD while adding only 66K additional parameters. Through extensive experiments on CIFAR-100, ImageNet, and MS-COCO, together with cross-dataset transfer to STL-10 and Tiny ImageNet, we show that our approach achieves competitive performance in classification, object detection, and transfer, while substantially reducing memory consumption and training time compared to existing contrastive distillation methods.
   bib: |
-    @inproceedings{giakoumoglou2026discriminative,
-      title={{Discriminative and Consistent Representation Distillation}},
-      author={Giakoumoglou, Nikolaos and Stathaki, Tania},
-      booktitle={ECCV 3rd Workshop on More Exploration, Less Exploitation (MELEX)},
-      year={2026}
+    @misc{giakoumoglou2026discriminative,
+          title={Discriminative and Consistent Representation Distillation}, 
+          author={Nikos Giakoumoglou and Tania Stathaki},
+          year={2026},
+          eprint={2407.11802},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2407.11802}, 
     }
 
 - key: varvarigos2026open
@@ -50,11 +56,14 @@
   abstract: >
     Modern vision systems must operate in "open-world" settings, where models must recognize known categories and detect unseen or anomalous content. Conventional semantic segmentation models operate under a "closed-world" assumption, often producing overconfident misclassifications on novel content. We address open-world semantic segmentation, the joint task of segmenting known classes while detecting and grouping novel or anomalous content without additional supervision, by extending a dual-decoder baseline with a third, complementary decoder within a unified encoder-decoder design. The first decoder performs closed-set segmentation using Gaussian prototypes for known categories. The second uses contrastive feature learning to isolate unknown regions in embedding space. The third, our key contribution, is a sensitivity decoder that captures fine-grained texture irregularities and activation instabilities indicative of semantic uncertainty, which neither semantic prototypes nor contrastive norms can reliably detect. The three decoders provide genuinely complementary signals: class-level OOD distance in logit space, global feature energy in embedding space, and local activation instability across encoder scales. Experiments on Cityscapes and BDD-Anomaly show that our method improves anomaly segmentation and novel-class discovery while maintaining competitive closed-set accuracy, with gains of +2.4% AUROC and a 2.5 pp. reduction in FPR@95TPR on BDD-Anomaly over the baseline.
   bib: |
-    @inproceedings{varvarigos2026open,
-      title={{Open-World Semantic Segmentation with Sensitivity Modeling}},
-      author={Varvarigos, Anastasios Romanos and Giakoumoglou, Nikolaos and Stathaki, Tania},
-      booktitle={ICIP Workshop on Multimodal Perception and Skill Training in Immersive Virtual Environments (M-PaSTIVE)},
-      year={2026}
+    @misc{varvarigos2026openworld,
+          title={Open-World Semantic Segmentation with Sensitivity Modeling}, 
+          author={Anastasios Romanos Varvarigos and Nikos Giakoumoglou and Tania Stathaki},
+          year={2026},
+          eprint={2608.08308},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2608.08308}, 
     }
 
 - key: giakoumoglou2026plantreview
