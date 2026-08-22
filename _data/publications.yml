@@ -28,7 +28,7 @@
   badge: ECCV
   title: Discriminative and Consistent Representation Distillation
   authors: N. Giakoumoglou, T. Stathaki
-  venue: In ECCV Workshop "MELEX", 2026
+  venue: In ECCV Workshop "MELEX" (Oral), 2026
   links:
     - {type: arxiv, id: "2407.11802"}
   abstract: >
