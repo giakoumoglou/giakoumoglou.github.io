@@ -1,5 +1,28 @@
 # ACCEPTED
 
+- key: giakoumoglou2026vitamins
+  status: accepted
+  year: 2027
+  badge: WACV
+  title: "ViTAMINS: An Empirical Study of Training Self-Supervised Vision Transformers with Synthetic Hard Negatives"
+  authors: N. Giakoumoglou, A. Floros, K. M. Papadopoulos, T. Stathaki
+  venue: In WACV, 2027
+  links:
+    - {type: arxiv, id: "2609.01041"}
+    - {type: code, id: giakoumoglou/vitamins}
+  abstract: >
+    TODO: paste the arXiv abstract verbatim.
+  bib: |
+    @misc{giakoumoglou2026vitamins,
+          title={{ViTAMINS: An Empirical Study of Training Self-Supervised Vision Transformers with Synthetic Hard Negatives}},
+          author={Nikos Giakoumoglou and Andreas Floros and Kleanthis-Marios Papadopoulos and Tania Stathaki},
+          year={2026},
+          eprint={2609.01041},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2609.01041},
+    }
+
 - key: giakoumoglou2026three
   status: accepted
   year: 2026
@@ -50,7 +73,7 @@
   badge: ICIP
   title: Open-World Semantic Segmentation with Sensitivity Modeling
   authors: A. R. Varvarigos, N. Giakoumoglou, T. Stathaki
-  venue: In ICIP Satellite Workshop "M-PaSTIVE", 2026
+  venue: In ICIP Workshop "M-PaSTIVE" (Oral), 2026
   links:
     - {type: arxiv, id: "2608.08308"}
   abstract: >
