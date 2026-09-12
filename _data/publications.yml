@@ -143,7 +143,7 @@
   badge: VISAPP
   title: A Multimodal Approach for Cross-Domain Image Retrieval
   authors: L. Iijima, N. Giakoumoglou and T. Stathaki
-  venue: In VISAPP, 2026
+  venue: In VISAPP (Oral), 2026
   links:
     - {type: scitepress, id: "10.5220/0014460000004084"}
     - {type: arxiv, id: "2403.15152"}
