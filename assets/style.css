@@ -97,3 +97,12 @@ button.pub-pill{border:1px solid var(--pill-border)}
     .navbar-nav{gap:1rem}
     .navbar-right{gap:1rem}
 }
+
+.highlight-oral {
+    color: #c2410c;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .highlight-oral {
+    color: #fb923c;
+}
