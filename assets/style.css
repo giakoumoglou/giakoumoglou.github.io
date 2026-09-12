@@ -99,10 +99,10 @@ button.pub-pill{border:1px solid var(--pill-border)}
 }
 
 .highlight-oral {
-    color: #c2410c;
+    color: #2563eb;
     font-weight: 600;
 }
 
 [data-theme="dark"] .highlight-oral {
-    color: #fb923c;
+    color: #60a5fa;
 }
