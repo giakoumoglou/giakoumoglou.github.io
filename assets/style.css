@@ -100,7 +100,6 @@ button.pub-pill{border:1px solid var(--pill-border)}
 
 .highlight-oral {
     color: #2563eb;
-    font-weight: 600;
 }
 
 [data-theme="dark"] .highlight-oral {
