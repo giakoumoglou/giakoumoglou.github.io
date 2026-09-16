@@ -1,10 +1,54 @@
 {%- assign pub = include.pub -%}
-<li>
-    <div class="pub-badge-col"><span class="pub-venue-badge{% if pub.status == 'review' %} review{% endif %}">{{ pub.badge }}</span></div>
+
+{%- assign flag_text = "" -%}
+{%- if pub.oral -%}{%- assign flag_text = "Oral" -%}{%- endif -%}
+{%- if pub.archival == false -%}
+    {%- if flag_text != "" -%}{%- assign flag_text = flag_text | append: ", non-archival" -%}
+    {%- else -%}{%- assign flag_text = "non-archival" -%}{%- endif -%}
+{%- endif -%}
+
+{%- assign venue_text = pub.venue -%}
+{%- unless venue_text -%}
+    {%- if pub.status == "preprint" -%}
+        {%- assign venue_text = "Under review" -%}
+    {%- else -%}
+        {%- if pub.type == "journal" -%}
+            {%- assign venue_text = "In " | append: pub.journal_name -%}
+        {%- elsif pub.type == "workshop" -%}
+            {%- assign venue_text = "In " | append: pub.conference_name | append: ' Workshop "' | append: pub.workshop_name | append: '"' -%}
+        {%- else -%}
+            {%- assign venue_text = "In " | append: pub.conference_name -%}
+        {%- endif -%}
+        {%- if flag_text != "" -%}
+            {%- assign venue_text = venue_text | append: " (" | append: flag_text | append: ")" -%}
+        {%- endif -%}
+        {%- assign venue_text = venue_text | append: ", " | append: pub.year -%}
+    {%- endif -%}
+{%- endunless -%}
+
+{%- assign display_badge = pub.badge -%}
+{%- unless display_badge -%}
+    {%- if pub.status == "preprint" -%}{%- assign display_badge = "Under Review" -%}
+    {%- else -%}{%- assign display_badge = pub.conference_name -%}{%- endif -%}
+{%- endunless -%}
+
+{%- assign filter_type = pub.type | default: "preprint" -%}
+{%- assign keyword_str = pub.keywords | join: "," -%}
+
+<li class="pub-item" data-type="{{ filter_type }}" data-oral="{{ pub.oral | default: false }}" data-nonarchival="{% if pub.archival == false %}true{% else %}false{% endif %}" data-review="{{ pub.review | default: false }}" data-year="{{ pub.year }}" data-venue="{{ display_badge }}" data-keywords="{{ keyword_str }}">
+    <div class="pub-badge-col"><span class="pub-venue-badge{% if pub.status == 'preprint' %} review{% endif %}">{{ display_badge }}</span></div>
     <div class="pub-content">
         <div class="pub-title">{{ pub.title }}</div>
         <div class="pub-authors">{{ pub.authors }}</div>
-        <div class="pub-venue-text">{{ pub.venue }}</div>
+        <div class="pub-venue-text">{{ venue_text }}</div>
+        <div class="pub-tags">
+            {%- if pub.type %}<span class="pub-tag tag-{{ pub.type }}">{{ pub.type | capitalize }}</span>{% endif -%}
+            {%- if pub.status == "preprint" %}<span class="pub-tag tag-preprint">Preprint</span>{% endif -%}
+            {%- if pub.review %}<span class="pub-tag tag-review">Review</span>{% endif -%}
+            {%- if pub.oral %}<span class="pub-tag tag-oral">Oral</span>{% endif -%}
+            {%- if pub.archival == false %}<span class="pub-tag tag-nonarchival">Non-archival</span>{% endif -%}
+            {%- for kw in pub.keywords %}<span class="pub-tag tag-keyword">{{ kw }}</span>{% endfor -%}
+        </div>
         <div class="pub-links">
             {%- for l in pub.links -%}
             {%- assign t = site.data.linktypes[l.type] -%}
