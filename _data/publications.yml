@@ -3,10 +3,11 @@
 - key: giakoumoglou2026vitamins
   status: accepted
   year: 2027
-  badge: WACV
+  type: conference
+  conference_name: WACV
+  keywords: [Self-supervised learning]
   title: "ViTAMINS: An Empirical Study of Training Self-Supervised Vision Transformers with Synthetic Hard Negatives"
   authors: N. Giakoumoglou, A. Floros, K. M. Papadopoulos, T. Stathaki
-  venue: In WACV, 2027
   links:
     - {type: arxiv, id: "2609.01041"}
     - {type: code, id: giakoumoglou/vitamins}
@@ -26,10 +27,12 @@
 - key: giakoumoglou2026three
   status: accepted
   year: 2026
-  badge: ECCV
+  type: workshop
+  conference_name: ECCV
+  workshop_name: UniWorld
+  keywords: [Self-supervised learning]
   title: Three Necessary Principles for Self-Supervised Visual Representation Learning
   authors: N. Giakoumoglou, P. Giakoumoglou, T. Stathaki
-  venue: In ECCV Workshop "UniWorld", 2026
   links:
     - {type: arxiv, id: "2608.08309"}
   abstract: >
@@ -48,10 +51,13 @@
 - key: giakoumoglou2026discriminative
   status: accepted
   year: 2026
-  badge: ECCV
+  type: workshop
+  oral: true
+  conference_name: ECCV
+  workshop_name: MELEX
+  keywords: [Knowledge distillation]
   title: Discriminative and Consistent Representation Distillation
   authors: N. Giakoumoglou, T. Stathaki
-  venue: In ECCV Workshop "MELEX" (Oral), 2026
   links:
     - {type: arxiv, id: "2407.11802"}
   abstract: >
@@ -70,10 +76,13 @@
 - key: varvarigos2026open
   status: accepted
   year: 2026
-  badge: ICIP
+  type: workshop
+  oral: true
+  conference_name: ICIP
+  workshop_name: M-PaSTIVE
+  keywords: [Semantic segmentation]
   title: Open-World Semantic Segmentation with Sensitivity Modeling
   authors: A. R. Varvarigos, N. Giakoumoglou, T. Stathaki
-  venue: In ICIP Workshop "M-PaSTIVE" (Oral), 2026
   links:
     - {type: arxiv, id: "2608.08308"}
   abstract: >
@@ -92,10 +101,13 @@
 - key: giakoumoglou2026plantreview
   status: accepted
   year: 2026
+  type: journal
+  review: true
+  journal_name: AI and Precision Agriculture
   badge: MDPI
+  keywords: [Agriculture]
   title: A Review on Artificial Intelligence Methods for Plant Disease and Pest Detection
   authors: N. Giakoumoglou, D. Kapetas, K. M. Papadopoulos, P. Christakakis, T. Stathaki, E. M. Pechlivani
-  venue: In AI and Precision Agriculture, 2026
   links:
     - {type: mdpi, id: "3043-1204/1/1/2", label: MDPI}
   abstract: >
@@ -116,10 +128,12 @@
 - key: papadopoulos2026expert
   status: accepted
   year: 2026
-  badge: ISBI
+  type: conference
+  oral: true
+  conference_name: ISBI
+  keywords: [Medical imaging]
   title: Expert Clustering and Knowledge Transfer for Whole Slide Image Classification
   authors: K. M. Papadopoulos, N. Giakoumoglou, A. Floros, P. L. Dragotti, T. Stathaki
-  venue: In ISBI (Oral), 2026
   links:
     - {type: ieee, id: "11515371"}
     - {type: code, id: MariosPapadopoulos/DnD_MIL}
@@ -140,10 +154,12 @@
 - key: iijima2024caption
   status: accepted
   year: 2026
-  badge: VISAPP
+  type: conference
+  oral: true
+  conference_name: VISAPP
+  keywords: [Image retrieval]
   title: A Multimodal Approach for Cross-Domain Image Retrieval
   authors: L. Iijima, N. Giakoumoglou and T. Stathaki
-  venue: In VISAPP (Oral), 2026
   links:
     - {type: scitepress, id: "10.5220/0014460000004084"}
     - {type: arxiv, id: "2403.15152"}
@@ -166,10 +182,13 @@
 - key: papadopoulos2025mitigating
   status: accepted
   year: 2025
-  badge: NeurIPS
+  type: workshop
+  archival: false
+  conference_name: NeurIPS
+  workshop_name: MedEurIPS
+  keywords: [Medical imaging]
   title: Mitigating Representation Bottlenecks in Multiple Instance Learning
   authors: K. M. Papadopoulos, N. Giakoumoglou, A. Floros, T. Stathaki
-  venue: In NeurIPS Workshop "MedEurIPS" (non-archival), 2025
   links:
     - {type: openreview, id: nywAT7N8Do}
   abstract: >
@@ -186,10 +205,11 @@
 - key: giakoumoglou2025cluster
   status: accepted
   year: 2025
-  badge: ICIP
+  type: conference
+  conference_name: ICIP
+  keywords: [Self-supervised learning]
   title: Cluster Contrast for Unsupervised Visual Representation Learning
   authors: N. Giakoumoglou, T. Stathaki
-  venue: In ICIP, 2025
   links:
     - {type: ieee, id: "11084524"}
     - {type: arxiv, id: "2507.12359"}
@@ -208,10 +228,13 @@
 - key: giakoumoglou2025fake
   status: accepted
   year: 2025
-  badge: ICCV
+  type: workshop
+  archival: false
+  conference_name: ICCV
+  workshop_name: LIMIT
+  keywords: [Self-supervised learning]
   title: Training Self-Supervised Vision Transformers with Synthetic Data and Synthetic Hard Negatives
   authors: N. Giakoumoglou, A. Floros, K. M. Papadopoulos, T. Stathaki
-  venue: In ICCV Workshop "LIMIT" (non-archival), 2025
   links:
     - {type: openreview, id: TJUfbYKo2c}
     - {type: arxiv, id: "2509.02029"}
@@ -230,10 +253,13 @@
 - key: giakoumoglou2025unsupervised
   status: accepted
   year: 2025
-  badge: CVPR
+  type: workshop
+  archival: false
+  conference_name: CVPR
+  workshop_name: Visual Concepts
+  keywords: [Self-supervised learning]
   title: Unsupervised Training of Vision Transformers with Synthetic Negatives
   authors: N. Giakoumoglou, A. Floros, K. M. Papadopoulos, T. Stathaki
-  venue: In CVPR Workshop "Visual Concepts" (non-archival), 2025
   links:
     - {type: openreview, id: dg8FuaOKnC}
     - {type: arxiv, id: "2509.02024"}
@@ -249,15 +275,14 @@
         url={https://openreview.net/forum?id=dg8FuaOKnC},
     }
 
-# UNDER REVIEW
+# PREPRINT
 
 - key: giakoumoglou2024synco
-  status: review
+  status: preprint
   year: 2024
-  badge: Under Review
+  keywords: [Self-supervised learning]
   title: "SynCo: Synthetic Hard Negatives for Contrastive Visual Representation Learning"
   authors: N. Giakoumoglou and T. Stathaki
-  venue: Under review
   links:
     - {type: arxiv, id: "2410.02401"}
     - {type: code, id: giakoumoglou/synco}
@@ -275,12 +300,11 @@
     }
 
 - key: giakoumoglou2024rrd
-  status: review
+  status: preprint
   year: 2024
-  badge: Under Review
+  keywords: [Knowledge distillation]
   title: Relational Representation Distillation
   authors: N. Giakoumoglou and T. Stathaki
-  venue: Under review
   links:
     - {type: arxiv, id: "2407.12073"}
     - {type: code, id: giakoumoglou/rrd}
@@ -298,12 +322,12 @@
     }
 
 - key: giakoumoglou2024review
-  status: review
+  status: preprint
   year: 2025
-  badge: Under Review
+  review: true
+  keywords: [Self-supervised learning]
   title: A Review on Discriminative Self-supervised Learning Methods
   authors: N. Giakoumoglou, T. Stathaki, A. Gkelias
-  venue: Under review
   links:
     - {type: arxiv, id: "2405.04969"}
   abstract: >
