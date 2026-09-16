@@ -152,13 +152,6 @@ document.querySelectorAll('a[href^="http"]').forEach(function(a){
             h.style.display = anyVisible ? '' : 'none';
             ol.style.display = anyVisible ? '' : 'none';
         });
-        var reviewOl = document.querySelector('#under-review .pub-list');
-        if (reviewOl) {
-            var reviewHeading = document.querySelector('#under-review h2');
-            var anyReviewVisible = Array.prototype.some.call(reviewOl.querySelectorAll('.pub-item'), function(li){ return li.style.display !== 'none'; });
-            reviewHeading.style.display = anyReviewVisible ? '' : 'none';
-            reviewOl.style.display = anyReviewVisible ? '' : 'none';
-        }
     }
 
     document.querySelectorAll('.filter-group[data-group="type"] .filter-btn').forEach(function(btn){
