@@ -2,9 +2,7 @@
 layout: null
 ---
 {%- assign profile = site.data.profile -%}
-{%- assign accepted = site.data.publications | where: "status", "accepted" -%}
-{%- assign review = site.data.publications | where: "status", "preprint" -%}
-{%- assign years = accepted | map: "year" | uniq | sort | reverse -%}
+{%- assign years = site.data.publications | map: "year" | uniq | sort | reverse -%}
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
@@ -96,7 +94,7 @@ layout: null
 </section>
 
 <section id="accepted-papers">
-    <h2>Accepted Papers for Publication</h2>
+    <h2>Publications</h2>
     <div class="pub-filters">
         <div class="filter-group" data-group="type">
             <button class="filter-btn active" data-value="all">All</button>
@@ -115,21 +113,12 @@ layout: null
     {%- for y in years %}
     <h3 class="pub-year-heading">{{ y }}</h3>
     <ol class="pub-list">
-        {%- assign pubs = accepted | where: "year", y -%}
+        {%- assign pubs = site.data.publications | where: "year", y -%}
         {%- for p in pubs %}
         {% include publication.html pub=p %}
         {%- endfor %}
     </ol>
     {%- endfor %}
-</section>
-
-<section id="under-review">
-    <h2>Under Review</h2>
-    <ol class="pub-list">
-        {%- for p in review %}
-        {% include publication.html pub=p %}
-        {%- endfor %}
-    </ol>
 </section>
 
 <section id="responsibility">
