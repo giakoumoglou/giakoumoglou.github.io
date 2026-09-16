@@ -105,3 +105,11 @@ button.pub-pill{border:1px solid var(--pill-border)}
 [data-theme="dark"] .highlight-oral {
     color: #60a5fa;
 }
+
+.highlight-nonarchival {
+    color: #475569;
+}
+
+[data-theme="dark"] .highlight-nonarchival {
+    color: #94a3b8;
+}
