@@ -110,3 +110,73 @@ document.querySelectorAll('a[href^="http"]').forEach(function(a){
         a.setAttribute('rel', 'noopener');
     }
 });
+
+/* Publication filters */
+(function(){
+    var items = Array.prototype.slice.call(document.querySelectorAll('.pub-item'));
+    if (!items.length) return;
+    var state = {type:'all', oral:false, nonarchival:false, review:false, year:'all', venue:'all', keyword:'all'};
+
+    var yearSel = document.getElementById('filter-year');
+    var venueSel = document.getElementById('filter-venue');
+    var keywordSel = document.getElementById('filter-keyword');
+    var years = [], venues = [], keywords = [];
+    items.forEach(function(li){
+        if (li.dataset.year && years.indexOf(li.dataset.year) === -1) years.push(li.dataset.year);
+        if (li.dataset.venue && venues.indexOf(li.dataset.venue) === -1) venues.push(li.dataset.venue);
+        (li.dataset.keywords || '').split(',').forEach(function(k){
+            if (k && keywords.indexOf(k) === -1) keywords.push(k);
+        });
+    });
+    years.sort().reverse();
+    venues.sort();
+    keywords.sort();
+    years.forEach(function(y){ var o=document.createElement('option'); o.value=y; o.textContent=y; yearSel.appendChild(o); });
+    venues.forEach(function(v){ var o=document.createElement('option'); o.value=v; o.textContent=v; venueSel.appendChild(o); });
+    keywords.forEach(function(k){ var o=document.createElement('option'); o.value=k; o.textContent=k; keywordSel.appendChild(o); });
+
+    function apply(){
+        items.forEach(function(li){
+            var ok = (state.type === 'all' || li.dataset.type === state.type)
+                && (!state.oral || li.dataset.oral === 'true')
+                && (!state.nonarchival || li.dataset.nonarchival === 'true')
+                && (!state.review || li.dataset.review === 'true')
+                && (state.year === 'all' || li.dataset.year === state.year)
+                && (state.venue === 'all' || li.dataset.venue === state.venue)
+                && (state.keyword === 'all' || (li.dataset.keywords || '').split(',').indexOf(state.keyword) !== -1);
+            li.style.display = ok ? '' : 'none';
+        });
+        document.querySelectorAll('.pub-year-heading').forEach(function(h){
+            var ol = h.nextElementSibling;
+            var anyVisible = Array.prototype.some.call(ol.querySelectorAll('.pub-item'), function(li){ return li.style.display !== 'none'; });
+            h.style.display = anyVisible ? '' : 'none';
+            ol.style.display = anyVisible ? '' : 'none';
+        });
+        var reviewOl = document.querySelector('#under-review .pub-list');
+        if (reviewOl) {
+            var reviewHeading = document.querySelector('#under-review h2');
+            var anyReviewVisible = Array.prototype.some.call(reviewOl.querySelectorAll('.pub-item'), function(li){ return li.style.display !== 'none'; });
+            reviewHeading.style.display = anyReviewVisible ? '' : 'none';
+            reviewOl.style.display = anyReviewVisible ? '' : 'none';
+        }
+    }
+
+    document.querySelectorAll('.filter-group[data-group="type"] .filter-btn').forEach(function(btn){
+        btn.addEventListener('click', function(){
+            document.querySelectorAll('.filter-group[data-group="type"] .filter-btn').forEach(function(b){ b.classList.remove('active'); });
+            btn.classList.add('active');
+            state.type = btn.dataset.value;
+            apply();
+        });
+    });
+    document.querySelectorAll('.filter-toggle').forEach(function(btn){
+        btn.addEventListener('click', function(){
+            btn.classList.toggle('active');
+            state[btn.dataset.flag] = btn.classList.contains('active');
+            apply();
+        });
+    });
+    yearSel.addEventListener('change', function(){ state.year = this.value; apply(); });
+    venueSel.addEventListener('change', function(){ state.venue = this.value; apply(); });
+    keywordSel.addEventListener('change', function(){ state.keyword = this.value; apply(); });
+})();

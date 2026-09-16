@@ -113,3 +113,20 @@ button.pub-pill{border:1px solid var(--pill-border)}
 [data-theme="dark"] .highlight-nonarchival {
     color: #fbbf24;
 }
+
+.pub-tags{margin-top:.3rem;display:flex;gap:.35rem;flex-wrap:wrap}
+.pub-tag{display:inline-block;font-size:.62rem;font-weight:500;padding:.12rem .45rem;border-radius:3px;text-transform:uppercase;letter-spacing:.03em;border:1px solid var(--pill-border);color:var(--text-muted)}
+.tag-conference{border-color:var(--blue-accent);color:var(--blue-accent)}
+.tag-workshop{border-color:#a855f7;color:#a855f7}
+.tag-journal{border-color:#059669;color:#059669}
+.tag-preprint{border-color:var(--text-muted);color:var(--text-muted)}
+.tag-review{border-color:#dc2626;color:#dc2626}
+.tag-oral{background:var(--blue-light);border-color:transparent;color:var(--blue-accent)}
+.tag-nonarchival{border-style:dashed}
+.tag-keyword{border-color:#d97706;color:#d97706}
+
+.pub-filters{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:1.5rem}
+.filter-group{display:flex;gap:.35rem;flex-wrap:wrap}
+.filter-btn,.filter-toggle,.pub-filters select{padding:.25rem .65rem;border:1px solid var(--pill-border);border-radius:4px;background:var(--pill-bg);color:var(--pill-text);font-size:.78rem;font-family:inherit;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.filter-btn:hover,.filter-toggle:hover{background:var(--pill-hover-bg)}
+.filter-btn.active,.filter-toggle.active{background:var(--badge-bg);border-color:var(--badge-bg);color:var(--badge-text)}
