@@ -41,14 +41,6 @@
         <div class="pub-title">{{ pub.title }}</div>
         <div class="pub-authors">{{ pub.authors }}</div>
         <div class="pub-venue-text">{{ venue_text }}</div>
-        <div class="pub-tags">
-            {%- if pub.type %}<span class="pub-tag tag-{{ pub.type }}">{{ pub.type | capitalize }}</span>{% endif -%}
-            {%- if pub.status == "preprint" %}<span class="pub-tag tag-preprint">Preprint</span>{% endif -%}
-            {%- if pub.review %}<span class="pub-tag tag-review">Review</span>{% endif -%}
-            {%- if pub.oral %}<span class="pub-tag tag-oral">Oral</span>{% endif -%}
-            {%- if pub.archival == false %}<span class="pub-tag tag-nonarchival">Non-archival</span>{% endif -%}
-            {%- for kw in pub.keywords %}<span class="pub-tag tag-keyword">{{ kw }}</span>{% endfor -%}
-        </div>
         <div class="pub-links">
             {%- for l in pub.links -%}
             {%- assign t = site.data.linktypes[l.type] -%}
