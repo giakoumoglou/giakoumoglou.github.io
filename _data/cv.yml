@@ -13,9 +13,17 @@ education:
     date: September 2016 &mdash; November 2021
 
 teaching:
+  - title: STEP-UP Digital Research Champion
+    detail: Imperial College London
+    date: Jul 2025 &ndash; Present
+
+  - title: Student Representative
+    detail: Communications and Signal Processing Group
+    date: Sep 2024 &ndash; Present
+
   - title: Graduate Teaching Assistant
-    detail: Lab demonstrator for Digital Image Processing (ELEC70078)
-    date: September 2024 &mdash; Present
+    detail: Imperial College London
+    date: Sep 2024 &ndash; Present
 
 service:
   - title: Reviewer
