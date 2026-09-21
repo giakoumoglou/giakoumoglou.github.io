@@ -1,5 +1,22 @@
 # ACCEPTED
 
+- key: giakoumoglou2026snap
+  status: accepted
+  year: 2026
+  type: conference
+  conference_name: ACCV
+  keywords: [Self-supervised learning, Vision-language pretraining]
+  title: "What Makes Synthetic Hard Negatives Work in Vision-Language Pretraining?"
+  authors: N. Giakoumoglou, P. Giakoumoglou, A. Floros, K. M. Papadopoulos, T. Stathaki
+  abstract: >
+    Synthetic hard negatives generated in the representation space have proven effective for unimodal self-supervised learning, but transferring this idea to vision-language pretraining is not straightforward. We show that the dual-modality structure of vision-language models introduces two geometric failure modes that have no unimodal analogue. First, cross-modal synthetic negatives fall into the modality gap between image and text embedding cones, making them trivially separable and informationally useless. Second, intra-modal synthesis involving the positive pair causes positive leakage since the synthetic negative inherits genuine positive signal and sends contradictory gradients. Both failure modes additionally destabilize the learnable temperature: the optimizer inflates the logit scale until saturation, over-sharpening the softmax and suppressing gradient signal from genuinely hard negatives. Using this geometric analysis we propose SNAP, which generates intra-modal hard negatives that never involve the positive from either modality, avoiding both failure modes entirely. SNAP is model-agnostic, requires no external generative models, and adds less than 9% training time overhead. Evaluated on top of CLIP and FLIP across multiple architectures and datasets, SNAP delivers consistent improvements on zero-shot retrieval, zero-shot classification, and linear probe evaluation.
+  bib: |
+    @misc{giakoumoglou2026snap,
+          title={{What Makes Synthetic Hard Negatives Work in Vision-Language Pretraining?}},
+          author={Nikos Giakoumoglou Paschalis Giakoumoglou and Andreas Floros and Kleanthis-Marios Papadopoulos and Tania Stathaki},
+          year={2026},
+    }
+
 - key: giakoumoglou2026vitamins
   status: accepted
   year: 2027
