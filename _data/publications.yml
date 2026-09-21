@@ -5,7 +5,7 @@
   year: 2026
   type: conference
   conference_name: ACCV
-  keywords: [Self-supervised learning, Vision-language pretraining]
+  keywords: [Self-supervised learning, Vision-language]
   title: "What Makes Synthetic Hard Negatives Work in Vision-Language Pretraining?"
   authors: N. Giakoumoglou, P. Giakoumoglou, A. Floros, K. M. Papadopoulos, T. Stathaki
   abstract: >
