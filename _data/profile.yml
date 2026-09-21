@@ -12,8 +12,11 @@ bio: >
   of the Centre for Research and Technology Hellas (CERTH). I received my Diploma
   in Electrical and Computer Engineering from Aristotle University of
   Thessaloniki in 2021.
-  My research focuses on self-supervised learning, in particular joint-embedding predictive
-  architectures (JEPAs) for computer vision and vision-language modelling.
+
+focus: >
+  My research focuses on (1) self-supervised learning for vision and vision-language
+  models, with a recent emphasis on joint-embedding predictive architectures (JEPAs);
+  (2) knowledge distillation; and (3) deep learning for medical imaging.
 
 social:
   - title: Email
