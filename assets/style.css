@@ -46,7 +46,7 @@ body{font-family:'Roboto',sans-serif;font-weight:300;line-height:1.7;color:var(-
 .social-row a{color:var(--text-secondary);text-decoration:none;font-size:1.25rem;transition:color .2s}
 .social-row a:hover{color:var(--link-color)}
 section{padding:2rem 0}
-section h2{font-size:1.6rem;font-weight:300;letter-spacing:-.01em;margin-bottom:1.2rem;color:var(--text-primary)}
+section h2{font-size:2rem;font-weight:300;letter-spacing:-.02em;margin-bottom:1.2rem;color:var(--text-primary)}
 .news-table{width:100%;border-collapse:collapse}
 .news-table td{padding:.4rem 0;vertical-align:top;font-size:.9rem}
 .news-table .news-date{width:120px;font-weight:500;color:var(--blue-accent);white-space:nowrap;padding-right:1rem}
