@@ -1,0 +1,14 @@
+---
+layout: default
+title: Teaching
+permalink: /teaching/
+---
+<section id="teaching">
+    <h2>Teaching and Volunteering</h2>
+    {%- for e in site.data.cv.teaching %}
+    <div class="cv-row">
+        <div><span class="cv-title">{{ e.title }}</span>, {% include inline-md.html text=e.detail %}</div>
+        <div class="cv-date">{{ e.date }}</div>
+    </div>
+    {%- endfor %}
+</section>
