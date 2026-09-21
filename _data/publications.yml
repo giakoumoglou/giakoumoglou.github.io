@@ -17,7 +17,7 @@
   type: conference
   conference_name: WACV
   keywords: [Self-supervised learning]
-  title: "ViTAMINS: An Empirical Study of Training Self-Supervised Vision Transformers with Synthetic Hard Negatives"
+  title: "An Empirical Study of Training Self-Supervised Vision Transformers with Synthetic Hard Negatives"
   authors: N. Giakoumoglou, A. Floros, K. M. Papadopoulos, T. Stathaki
   links:
     - {type: arxiv, id: "2609.01041"}
