@@ -17,6 +17,13 @@ bio: >
   Intelligence, Machine Learning, and Deep Learning, with a special interest in
   applications within the field of Computer Vision.
 
+focus: >
+  My research focuses on two main areas: (1) multi-modal foundation models, with an
+  emphasis on perceiving, understanding, and modelling complex multi-sensory signals
+  such as visual, acoustic, and tactile data; and (2) generative modeling of the
+  physical world, with the goal of synthesizing scalable and reliable digital assets
+  that reproduce real-world entities.
+
 social:
   - title: Email
     icon: fa-solid fa-envelope
