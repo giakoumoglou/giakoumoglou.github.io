@@ -121,5 +121,4 @@ button.pub-pill{border:1px solid var(--pill-border)}
 .filter-btn.active,.filter-toggle.active{background:var(--badge-bg);border-color:var(--badge-bg);color:var(--badge-text)}
 .profile-bio strong{color:var(--text-primary);font-weight:500}
 .profile-bio strong{color:var(--text-primary);font-weight:500}
-.profile-focus{margin-top:1rem}
-.profile-focus{margin-top:1rem}
+.profile-focus{margin-top:2rem}
