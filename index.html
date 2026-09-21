@@ -19,7 +19,7 @@ layout: default
     <div class="profile-bio">
         {{ profile.bio | markdownify }}
         {%- if profile.focus %}
-        <p><strong>{% include inline-md.html text=profile.focus %}</strong></p>
+        <p>{% include inline-md.html text=profile.focus %}</p>
         {%- endif %}
     </div>
 </section>
