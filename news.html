@@ -1,0 +1,17 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+<section id="news">
+    <h2>News</h2>
+    {%- assign news_by_year = site.data.news | group_by_exp: "item", "item.date | slice: -4, 4" -%}
+    {%- for group in news_by_year %}
+    <h3 class="pub-year-heading">{{ group.name }}</h3>
+    <table class="news-table">
+        {%- for item in group.items %}
+        <tr><td class="news-date">{{ item.date }}</td><td class="news-text">{% include inline-md.html text=item.text %}</td></tr>
+        {%- endfor %}
+    </table>
+    {%- endfor %}
+</section>
