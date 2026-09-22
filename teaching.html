@@ -4,18 +4,12 @@ title: Teaching
 permalink: /teaching/
 ---
 
-<div class="page-content">
+<h1>Teaching</h1>
 
-  <div class="page-header">
-    <h1>Teaching</h1>
-  </div>
+<div class="pub-list">
 
-  <div class="pub-list">
-
-    {% for teaching in site.data.teaching %}
-      {% include teaching.html teaching=teaching %}
-    {% endfor %}
-
-  </div>
+  {% for teaching in site.data.teaching %}
+    {% include teaching.html teaching=teaching %}
+  {% endfor %}
 
 </div>
