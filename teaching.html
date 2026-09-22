@@ -6,10 +6,12 @@ permalink: /teaching/
 
 <h1>Teaching</h1>
 
-<div class="pub-list">
+<ul class="pub-list">
 
-  {% for teaching in site.data.teaching %}
-    {% include teaching.html teaching=teaching %}
-  {% endfor %}
+    {% for item in site.data.teaching %}
 
-</div>
+        {% include teaching.html item=item %}
+
+    {% endfor %}
+
+</ul>
