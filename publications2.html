@@ -1,0 +1,55 @@
+---
+layout: default
+title: Publications
+permalink: /publications2/
+---
+
+{%- assign years = site.data.publications | map: "year" | uniq | sort | reverse -%}
+
+<section id="accepted-papers">
+
+    <h2>Publications</h2>
+
+    <div class="pub-filters">
+
+        <div class="filter-group" data-group="type">
+            <button class="filter-btn active" data-value="all">All</button>
+            <button class="filter-btn" data-value="conference">Conference</button>
+            <button class="filter-btn" data-value="workshop">Workshop</button>
+            <button class="filter-btn" data-value="journal">Journal</button>
+            <button class="filter-btn" data-value="preprint">Preprint</button>
+        </div>
+
+        <select id="filter-year">
+            <option value="all">All years</option>
+        </select>
+
+        <select id="filter-venue">
+            <option value="all">All venues</option>
+        </select>
+
+        <select id="filter-keyword">
+            <option value="all">All keywords</option>
+        </select>
+
+    </div>
+
+    {%- for y in years %}
+
+    <h3 class="pub-year-heading">{{ y }}</h3>
+
+    <ol class="pub-list">
+
+        {%- assign pubs = site.data.publications | where: "year", y -%}
+
+        {%- for p in pubs %}
+
+        {% include publication2.html pub=p %}
+
+        {%- endfor %}
+
+    </ol>
+
+    {%- endfor %}
+
+</section>
