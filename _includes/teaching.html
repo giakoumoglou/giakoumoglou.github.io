@@ -2,12 +2,7 @@
 
 <li class="pub-item">
 
-    <!--
-        Keep the same empty badge column used by the publication layout.
-        This makes the content align exactly with publication content.
-    -->
     <div class="pub-badge-col"></div>
-
 
     <div class="pub-content">
 
@@ -15,13 +10,11 @@
             {{ item.title }}
         </div>
 
-
         {%- if item.detail %}
         <div class="pub-authors">
             {{ item.detail }}
         </div>
         {%- endif %}
-
 
         {%- if item.description %}
         <div class="pub-authors">
@@ -29,123 +22,8 @@
         </div>
         {%- endif %}
 
-
         <div class="pub-venue-text">
             {{ item.date }}
-        </div>
-
-
-        <div class="pub-links">
-
-            {%- for l in item.links %}
-
-            <a
-                class="pub-pill"
-                href="{{ l.url }}"
-                target="_blank"
-                rel="noopener"
-            >
-
-                <!-- STEP-UP -->
-                {%- if l.icon == "stepup" %}
-
-                <span
-                    style="
-                        display:inline-flex;
-                        align-items:center;
-                        justify-content:center;
-                        width:22px;
-                        height:14px;
-                        padding:1px 3px;
-                        border-radius:3px;
-                        background:#164b3b;
-                        margin-right:5px;
-                        vertical-align:-2px;
-                    "
-                    aria-hidden="true"
-                >
-                    <img
-                        src="https://step-up.ac.uk/assets/images/step-up-white.svg"
-                        alt=""
-                        style="
-                            display:block;
-                            width:100%;
-                            height:100%;
-                            object-fit:contain;
-                        "
-                    >
-                </span>
-
-
-                <!-- Imperial white I -->
-                {%- elsif l.icon == "imperial-white" %}
-
-                <svg
-                    viewBox="0 0 64 64"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    style="
-                        width:14px;
-                        height:14px;
-                        display:inline-block;
-                        margin-right:5px;
-                        vertical-align:-2px;
-                    "
-                >
-                    <rect
-                        x="0"
-                        y="0"
-                        width="64"
-                        height="64"
-                        rx="12"
-                        fill="#1010d8"
-                    />
-
-                    <path
-                        d="M17 15h30v7H36v20h11v7H17v-7h11V22H17V15z"
-                        fill="#ffffff"
-                    />
-                </svg>
-
-
-                <!-- Imperial green I -->
-                {%- elsif l.icon == "imperial-green" %}
-
-                <svg
-                    viewBox="0 0 64 64"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    style="
-                        width:14px;
-                        height:14px;
-                        display:inline-block;
-                        margin-right:5px;
-                        vertical-align:-2px;
-                    "
-                >
-                    <rect
-                        x="0"
-                        y="0"
-                        width="64"
-                        height="64"
-                        rx="12"
-                        fill="#1010d8"
-                    />
-
-                    <path
-                        d="M17 15h30v7H36v20h11v7H17v-7h11V22H17V15z"
-                        fill="#14ef7a"
-                    />
-                </svg>
-
-                {%- endif %}
-
-                {{ l.label }}
-
-            </a>
-
-            {%- endfor %}
-
         </div>
 
     </div>
