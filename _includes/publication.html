@@ -1,66 +1,23 @@
-{%- assign pub = include.pub -%}
+{%- assign item = include.item -%}
 
-{%- assign flag_text = "" -%}
-{%- if pub.oral -%}{%- assign flag_text = "Oral" -%}{%- endif -%}
-{%- if pub.archival == false -%}
-    {%- if flag_text != "" -%}{%- assign flag_text = flag_text | append: ", non-archival" -%}
-    {%- else -%}{%- assign flag_text = "non-archival" -%}{%- endif -%}
-{%- endif -%}
+<li class="pub-item">
 
-{%- assign venue_text = pub.venue -%}
-{%- unless venue_text -%}
-    {%- if pub.status == "preprint" -%}
-        {%- assign venue_text = "Under review" -%}
-    {%- else -%}
-        {%- if pub.type == "journal" -%}
-            {%- assign venue_text = "In " | append: pub.journal_name -%}
-        {%- elsif pub.type == "workshop" -%}
-            {%- assign venue_text = "In " | append: pub.conference_name | append: ' Workshop "' | append: pub.workshop_name | append: '"' -%}
-        {%- else -%}
-            {%- assign venue_text = "In " | append: pub.conference_name -%}
-        {%- endif -%}
-        {%- if flag_text != "" -%}
-            {%- assign venue_text = venue_text | append: " (" | append: flag_text | append: ")" -%}
-        {%- endif -%}
-        {%- assign venue_text = venue_text | append: ", " | append: pub.year -%}
-    {%- endif -%}
-{%- endunless -%}
+    <div class="pub-badge-col"></div>
 
-{%- assign display_badge = pub.badge -%}
-{%- unless display_badge -%}
-    {%- if pub.status == "preprint" -%}{%- assign display_badge = "Under Review" -%}
-    {%- else -%}{%- assign display_badge = pub.conference_name -%}{%- endif -%}
-{%- endunless -%}
-
-{%- assign filter_type = pub.type | default: "preprint" -%}
-{%- assign keyword_str = pub.keywords | join: "," -%}
-
-<li class="pub-item" data-type="{{ filter_type }}" data-oral="{{ pub.oral | default: false }}" data-nonarchival="{% if pub.archival == false %}true{% else %}false{% endif %}" data-review="{{ pub.review | default: false }}" data-year="{{ pub.year }}" data-venue="{{ display_badge }}" data-keywords="{{ keyword_str }}">
-    <div class="pub-badge-col"><span class="pub-venue-badge{% if pub.status == 'preprint' %} review{% endif %}">{{ display_badge }}</span></div>
     <div class="pub-content">
-        <div class="pub-title">{{ pub.title }}</div>
-        <div class="pub-authors">{{ pub.authors }}</div>
-        <div class="pub-venue-text">{{ venue_text }}</div>
-        <div class="pub-links">
-            {%- for l in pub.links -%}
-            {%- assign t = site.data.linktypes[l.type] -%}
-            {%- if l.url -%}{%- assign href = l.url -%}{%- else -%}{%- assign href = t.url | replace: '{id}', l.id -%}{%- endif -%}
-            {%- assign label = l.label | default: t.label -%}
-            {%- assign icon = l.icon | default: t.icon -%}
-            <a class="pub-pill" href="{{ href }}" target="_blank" rel="noopener"><i class="{{ icon }}" aria-hidden="true"></i>{{ label }}</a>
-            {%- endfor -%}
-            {%- if pub.bib %}
-            <button class="pub-pill" onclick="toggleDrop(this,'bib')" data-icon='<i class="fa-solid fa-quote-left" aria-hidden="true"></i>'><i class="fa-solid fa-quote-left" aria-hidden="true"></i>Bib</button>
-            {%- endif -%}
-            {%- if pub.abstract %}
-            <button class="pub-pill" onclick="toggleDrop(this,'abstract')" data-icon='<i class="fa-solid fa-bars" aria-hidden="true"></i>'><i class="fa-solid fa-bars" aria-hidden="true"></i>Abstract</button>
-            {%- endif %}
-        </div>
-        {%- if pub.abstract %}
-        <div class="pub-abstract">{{ pub.abstract | strip }}</div>
-        {%- endif -%}
-        {%- if pub.bib %}
-        <div class="bib-block">{{- pub.bib | strip | escape -}}</div>
+
+        <div class="pub-title">{{ item.title }}</div>
+
+        {%- if item.detail %}
+        <div class="pub-authors">{{ item.detail }}</div>
         {%- endif %}
+
+        {%- if item.description %}
+        <div class="pub-authors">{{ item.description }}</div>
+        {%- endif %}
+
+        <div class="pub-venue-text">{{ item.date }}</div>
+
     </div>
+
 </li>
