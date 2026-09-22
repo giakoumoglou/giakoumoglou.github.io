@@ -40,7 +40,9 @@
 
 
         {%- if flag_text != "" -%}
+
             {%- assign venue_text = venue_text | append: " (" | append: flag_text | append: ")" -%}
+
         {%- endif -%}
 
 
@@ -56,9 +58,13 @@
 {%- unless display_badge -%}
 
     {%- if pub.status == "preprint" -%}
+
         {%- assign display_badge = "Under Review" -%}
+
     {%- else -%}
+
         {%- assign display_badge = pub.conference_name -%}
+
     {%- endif -%}
 
 {%- endunless -%}
@@ -109,9 +115,13 @@
             {%- assign t = site.data.linktypes[l.type] -%}
 
             {%- if l.url -%}
+
                 {%- assign href = l.url -%}
+
             {%- else -%}
+
                 {%- assign href = t.url | replace: '{id}', l.id -%}
+
             {%- endif -%}
 
 
