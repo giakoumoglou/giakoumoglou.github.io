@@ -1,0 +1,136 @@
+<div class="pub-entry">
+
+  <div class="pub-title">
+    {{ include.teaching.title }}
+  </div>
+
+  {% if include.teaching.detail %}
+  <div class="pub-authors">
+    {% include inline-md.html text=include.teaching.detail %}
+  </div>
+  {% endif %}
+
+  {% if include.teaching.description %}
+  <div class="pub-authors">
+    {% include inline-md.html text=include.teaching.description %}
+  </div>
+  {% endif %}
+
+  {% if include.teaching.date %}
+  <div class="pub-venue-text">
+    {{ include.teaching.date }}
+  </div>
+  {% endif %}
+
+
+  {% if include.teaching.links %}
+  <div class="pub-links">
+
+    {% for link in include.teaching.links %}
+
+    <a
+      class="pub-pill"
+      href="{{ link.url }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      {% if link.icon == "stepup" %}
+
+      <span
+        style="
+          display:inline-flex;
+          align-items:center;
+          justify-content:center;
+          width:22px;
+          height:15px;
+          padding:1px 3px;
+          margin-right:4px;
+          border-radius:3px;
+          background:#164b3b;
+          vertical-align:middle;
+        "
+        aria-hidden="true"
+      >
+        <img
+          src="https://step-up.ac.uk/assets/images/step-up-white.svg"
+          alt=""
+          style="
+            display:block;
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          "
+        >
+      </span>
+
+
+      {% elsif link.icon == "imperial-white" %}
+
+      <svg
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        style="
+          width:14px;
+          height:14px;
+          display:inline-block;
+          margin-right:4px;
+          vertical-align:-2px;
+        "
+      >
+        <rect
+          x="0"
+          y="0"
+          width="64"
+          height="64"
+          rx="12"
+          fill="#1010d8"
+        />
+        <path
+          d="M17 15h30v7H36v20h11v7H17v-7h11V22H17V15z"
+          fill="#ffffff"
+        />
+      </svg>
+
+
+      {% elsif link.icon == "imperial-green" %}
+
+      <svg
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        style="
+          width:14px;
+          height:14px;
+          display:inline-block;
+          margin-right:4px;
+          vertical-align:-2px;
+        "
+      >
+        <rect
+          x="0"
+          y="0"
+          width="64"
+          height="64"
+          rx="12"
+          fill="#1010d8"
+        />
+        <path
+          d="M17 15h30v7H36v20h11v7H17v-7h11V22H17V15z"
+          fill="#14ef7a"
+        />
+      </svg>
+
+      {% endif %}
+
+      {{ link.label }}
+
+    </a>
+
+    {% endfor %}
+
+  </div>
+  {% endif %}
+
+</div>
