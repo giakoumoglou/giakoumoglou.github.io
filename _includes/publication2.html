@@ -1,7 +1,10 @@
 {%- assign pub = include.pub -%}
 
 {%- assign flag_text = "" -%}
-{%- if pub.oral -%}{%- assign flag_text = "Oral" -%}{%- endif -%}
+{%- if pub.oral -%}
+    {%- assign flag_text = "Oral" -%}
+{%- endif -%}
+
 {%- if pub.archival == false -%}
     {%- if flag_text != "" -%}
         {%- assign flag_text = flag_text | append: ", non-archival" -%}
@@ -10,40 +13,62 @@
     {%- endif -%}
 {%- endif -%}
 
+
 {%- assign venue_text = pub.venue -%}
+
 {%- unless venue_text -%}
+
     {%- if pub.status == "preprint" -%}
+
         {%- assign venue_text = "Under review" -%}
+
     {%- else -%}
 
         {%- if pub.type == "journal" -%}
+
             {%- assign venue_text = "In " | append: pub.journal_name -%}
 
         {%- elsif pub.type == "workshop" -%}
+
             {%- assign venue_text = "In " | append: pub.conference_name | append: ' Workshop "' | append: pub.workshop_name | append: '"' -%}
 
         {%- else -%}
+
             {%- assign venue_text = "In " | append: pub.conference_name -%}
 
         {%- endif -%}
 
+
         {%- if flag_text != "" -%}
+
             {%- assign venue_text = venue_text | append: " (" | append: flag_text | append: ")" -%}
+
         {%- endif -%}
+
 
         {%- assign venue_text = venue_text | append: ", " | append: pub.year -%}
 
     {%- endif -%}
+
 {%- endunless -%}
 
+
 {%- assign display_badge = pub.badge -%}
+
 {%- unless display_badge -%}
+
     {%- if pub.status == "preprint" -%}
+
         {%- assign display_badge = "Under Review" -%}
+
     {%- else -%}
+
         {%- assign display_badge = pub.conference_name -%}
+
     {%- endif -%}
+
 {%- endunless -%}
+
 
 {%- assign filter_type = pub.type | default: "preprint" -%}
 {%- assign keyword_str = pub.keywords | join: "," -%}
@@ -60,21 +85,23 @@
     data-keywords="{{ keyword_str }}"
 >
 
-    <!--
-        No pub-badge-col here.
-        Publication content spans the full row,
-        just like Teaching & Volunteering.
-    -->
+    <div
+        class="pub-content"
+        style="grid-column: 1 / -1;"
+    >
 
-    <div class="pub-content" style="grid-column: 1 / -1;">
-
-        <div class="pub-title">
+        <div
+            class="pub-title"
+            style="color: #2563eb;"
+        >
             {{ pub.title }}
         </div>
+
 
         <div class="pub-authors">
             {{ pub.authors }}
         </div>
+
 
         <div class="pub-venue-text">
             {{ venue_text }}
@@ -88,13 +115,19 @@
             {%- assign t = site.data.linktypes[l.type] -%}
 
             {%- if l.url -%}
+
                 {%- assign href = l.url -%}
+
             {%- else -%}
+
                 {%- assign href = t.url | replace: '{id}', l.id -%}
+
             {%- endif -%}
+
 
             {%- assign label = l.label | default: t.label -%}
             {%- assign icon = l.icon | default: t.icon -%}
+
 
             <a
                 class="pub-pill"
@@ -102,7 +135,10 @@
                 target="_blank"
                 rel="noopener"
             >
-                <i class="{{ icon }}" aria-hidden="true"></i>{{ label }}
+                <i
+                    class="{{ icon }}"
+                    aria-hidden="true"
+                ></i>{{ label }}
             </a>
 
             {%- endfor -%}
@@ -123,32 +159,7 @@
 
             {%- endif -%}
 
-
-            {%- if pub.abstract %}
-
-            <button
-                class="pub-pill"
-                onclick="toggleDrop(this,'abstract')"
-                data-icon='<i class="fa-solid fa-bars" aria-hidden="true"></i>'
-            >
-                <i
-                    class="fa-solid fa-bars"
-                    aria-hidden="true"
-                ></i>Abstract
-            </button>
-
-            {%- endif %}
-
         </div>
-
-
-        {%- if pub.abstract %}
-
-        <div class="pub-abstract">
-            {{ pub.abstract | strip }}
-        </div>
-
-        {%- endif -%}
 
 
         {%- if pub.bib %}
