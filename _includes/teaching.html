@@ -2,29 +2,19 @@
 
 <li class="pub-item">
 
-    <div class="pub-badge-col"></div>
+    <div class="pub-content" style="grid-column: 1 / -1;">
 
-    <div class="pub-content">
-
-        <div class="pub-title">
-            {{ item.title }}
-        </div>
+        <div class="pub-title">{{ item.title }}</div>
 
         {%- if item.detail %}
-        <div class="pub-authors">
-            {{ item.detail }}
-        </div>
+        <div class="pub-authors">{{ item.detail }}</div>
         {%- endif %}
 
         {%- if item.description %}
-        <div class="pub-authors">
-            {{ item.description }}
-        </div>
+        <div class="pub-authors">{{ item.description }}</div>
         {%- endif %}
 
-        <div class="pub-venue-text">
-            {{ item.date }}
-        </div>
+        <div class="pub-venue-text">{{ item.date }}</div>
 
     </div>
 
