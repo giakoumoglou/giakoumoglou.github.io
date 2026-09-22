@@ -1,30 +1,14 @@
 - title: STEP-UP Digital Research Champion
   detail: Imperial College London
   date: Jul 2025 &ndash; Present
-  links:
-    - label: STEP-UP
-      url: https://step-up.ac.uk/
-      icon: stepup
-
-    - label: FEATURE
-      url: https://imperialcollegelondon.github.io/rs-community-newsletters/2026/2026-06.html#nikolaos-giakoumoglou
-      icon: imperial-white
 
 
 - title: Student Representative
   detail: Communications and Signal Processing Group
   date: Sep 2024 &ndash; Present
-  links:
-    - label: CSP
-      url: https://www.imperial.ac.uk/electrical-engineering/research/comms-and-signal-processing/
-      icon: imperial-green
 
 
 - title: Graduate Teaching Assistant
   detail: Imperial College London
   description: Lab demonstrator for Digital Image Processing (ELEC70078)
   date: Sep 2024 &ndash; Present
-  links:
-    - label: EEE
-      url: https://www.imperial.ac.uk/electrical-engineering/
-      icon: imperial-white
