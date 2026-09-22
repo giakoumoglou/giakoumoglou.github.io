@@ -4,14 +4,18 @@ title: Teaching and Volunteering
 permalink: /teaching/
 ---
 
-<h1>Teaching and Volunteering</h1>
+<section id="accepted-papers">
 
-<ul class="pub-list">
+    <h2>Teaching and Volunteering</h2>
 
-    {% for item in site.data.teaching %}
+    <ol class="pub-list">
+
+        {%- for item in site.data.teaching %}
 
         {% include teaching.html item=item %}
 
-    {% endfor %}
+        {%- endfor %}
 
-</ul>
+    </ol>
+
+</section>
