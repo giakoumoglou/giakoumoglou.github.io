@@ -5,6 +5,11 @@ permalink: /teaching/
 ---
 
 <style>
+  /*
+   * Teaching buttons reuse the existing publication button styling.
+   * We only add styling for the logos/icons themselves.
+   */
+
   .teaching-links {
     margin-top: 8px;
   }
@@ -12,7 +17,6 @@ permalink: /teaching/
   .teaching-links .pub-pill {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
   }
 
   .teaching-link-logo {
@@ -20,14 +24,16 @@ permalink: /teaching/
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+
+    /* Space between the icon and the button text */
+    margin-right: 5px;
   }
 
-  .teaching-link-logo img {
-    display: block;
-    object-fit: contain;
-  }
 
-  /* STEP-UP logo is white, so it needs a dark background */
+  /* =========================================================
+     STEP-UP logo
+     ========================================================= */
+
   .teaching-link-logo.stepup {
     height: 18px;
     padding: 2px 5px;
@@ -36,20 +42,39 @@ permalink: /teaching/
   }
 
   .teaching-link-logo.stepup img {
+    display: block;
     width: 24px;
     height: 14px;
-  }
-
-  /* Imperial wordmark */
-  .teaching-link-logo.imperial {
-    width: 34px;
-    height: 18px;
-  }
-
-  .teaching-link-logo.imperial img {
-    width: 34px;
-    height: 18px;
     object-fit: contain;
+  }
+
+
+  /* =========================================================
+     Imperial "I"
+     Uses the left-most part of the official Imperial wordmark.
+     ========================================================= */
+
+  .teaching-link-logo.imperial-i {
+    position: relative;
+    display: inline-block;
+
+    width: 10px;
+    height: 18px;
+
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .teaching-link-logo.imperial-i img {
+    position: absolute;
+    display: block;
+
+    height: 18px;
+    width: auto;
+    max-width: none;
+
+    top: 0;
+    left: 0;
   }
 </style>
 
@@ -89,7 +114,10 @@ permalink: /teaching/
       {% endif %}
 
 
-      <!-- STEP-UP Digital Research Champion -->
+      <!-- =====================================================
+           STEP-UP Digital Research Champion
+           ===================================================== -->
+
       {% if e.title == "STEP-UP Digital Research Champion" %}
 
       <div class="pub-links teaching-links">
@@ -100,6 +128,7 @@ permalink: /teaching/
           target="_blank"
           rel="noopener noreferrer"
         >
+
           <span class="teaching-link-logo stepup">
             <img
               src="https://step-up.ac.uk/assets/images/step-up-white.svg"
@@ -108,7 +137,8 @@ permalink: /teaching/
             >
           </span>
 
-          STEP-UP
+          <span>STEP-UP</span>
+
         </a>
 
 
@@ -118,7 +148,8 @@ permalink: /teaching/
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="teaching-link-logo imperial">
+
+          <span class="teaching-link-logo imperial-i">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/0/06/Imperial_College_London_new_logo.png"
               alt=""
@@ -126,7 +157,8 @@ permalink: /teaching/
             >
           </span>
 
-          Imperial Feature
+          <span>Imperial Feature</span>
+
         </a>
 
       </div>
@@ -134,7 +166,10 @@ permalink: /teaching/
       {% endif %}
 
 
-      <!-- Student Representative -->
+      <!-- =====================================================
+           Student Representative
+           ===================================================== -->
+
       {% if e.title == "Student Representative" %}
 
       <div class="pub-links teaching-links">
@@ -145,7 +180,8 @@ permalink: /teaching/
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="teaching-link-logo imperial">
+
+          <span class="teaching-link-logo imperial-i">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/0/06/Imperial_College_London_new_logo.png"
               alt=""
@@ -153,7 +189,8 @@ permalink: /teaching/
             >
           </span>
 
-          Committee
+          <span>Committee</span>
+
         </a>
 
       </div>
@@ -161,7 +198,10 @@ permalink: /teaching/
       {% endif %}
 
 
-      <!-- Graduate Teaching Assistant -->
+      <!-- =====================================================
+           Graduate Teaching Assistant
+           ===================================================== -->
+
       {% if e.title == "Graduate Teaching Assistant" %}
 
       <div class="pub-links teaching-links">
@@ -172,7 +212,8 @@ permalink: /teaching/
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="teaching-link-logo imperial">
+
+          <span class="teaching-link-logo imperial-i">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/0/06/Imperial_College_London_new_logo.png"
               alt=""
@@ -180,7 +221,8 @@ permalink: /teaching/
             >
           </span>
 
-          EEE Department
+          <span>EEE Department</span>
+
         </a>
 
       </div>
