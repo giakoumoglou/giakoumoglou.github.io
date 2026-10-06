@@ -142,7 +142,7 @@
   type: conference
   oral: true
   conference_name: ISBI
-  keywords: [Medical imaging]
+  keywords: [Medical imaging, Knowledge distillation]
   title: Expert Clustering and Knowledge Transfer for Whole Slide Image Classification
   authors: K. M. Papadopoulos, N. Giakoumoglou, A. Floros, P. L. Dragotti, T. Stathaki
   links:
@@ -197,7 +197,7 @@
   archival: false
   conference_name: NeurIPS
   workshop_name: MedEurIPS
-  keywords: [Medical imaging]
+  keywords: [Medical imaging, Knowledge distillation]
   title: Mitigating Representation Bottlenecks in Multiple Instance Learning
   authors: K. M. Papadopoulos, N. Giakoumoglou, A. Floros, T. Stathaki
   links:
