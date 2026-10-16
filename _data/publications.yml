@@ -121,7 +121,7 @@
   oral: true
   conference_name: ICIP
   workshop_name: M-PaSTIVE
-  keywords: [Semantic segmentation]
+  keywords: [Open-World Semantic Segmentation]
   title: Open-World Semantic Segmentation with Sensitivity Modeling
   authors: A. R. Varvarigos, N. Giakoumoglou, T. Stathaki
   links:
@@ -146,7 +146,7 @@
   review: true
   journal_name: AI and Precision Agriculture
   badge: MDPI
-  keywords: [Agriculture]
+  keywords: [Agriculture, Review]
   title: A Review on Artificial Intelligence Methods for Plant Disease and Pest Detection
   authors: N. Giakoumoglou, D. Kapetas, K. M. Papadopoulos, P. Christakakis, T. Stathaki, E. M. Pechlivani
   links:
@@ -198,7 +198,7 @@
   type: conference
   oral: true
   conference_name: VISAPP
-  keywords: [Image retrieval]
+  keywords: []
   title: A Multimodal Approach for Cross-Domain Image Retrieval
   authors: L. Iijima, N. Giakoumoglou and T. Stathaki
   links:
@@ -366,7 +366,7 @@
   status: preprint
   year: 2024
   review: true
-  keywords: [Self-supervised learning]
+  keywords: [Self-supervised learning, Review]
   title: A Review on Discriminative Self-supervised Learning Methods
   authors: N. Giakoumoglou, T. Stathaki, A. Gkelias
   links:
