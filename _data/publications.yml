@@ -1,5 +1,23 @@
 # ACCEPTED
 
+- key: giakoumoglou2027sjepa
+  status: accepted
+  year: 2027
+  type: conference
+  conference_name: WACV
+  keywords: [Self-supervised learning, Joint Embedding Predictive Architectures]
+  title: "A Stochastic Latent Variable Generalization of Joint-Embedding Predictive Architectures"
+  authors: N. Giakoumoglou, P. Giakoumoglou, T. Stathaki
+
+- key: giakoumoglou2027fox
+  status: accepted
+  year: 2027
+  type: conference
+  conference_name: WACV
+  keywords: [Joint Embedding Predictive Architectures, Forgery Detection]
+  title: "Generalizable AI-Generated Image Detection with Embedding-Space Explanations"
+  authors: N. Giakoumoglou, P. Giakoumoglou, T. Stathaki, S. Papadopoulos
+  
 - key: giakoumoglou2026snap
   status: accepted
   year: 2026
