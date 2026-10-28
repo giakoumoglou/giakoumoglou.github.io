@@ -8,6 +8,8 @@
   keywords: [Self-supervised learning, Joint Embedding Predictive Architectures]
   title: "A Stochastic Latent Variable Generalization of Joint-Embedding Predictive Architectures"
   authors: N. Giakoumoglou, P. Giakoumoglou, T. Stathaki
+  links:
+    - {type: code, id: giakoumoglou/sjepa}
 
 - key: giakoumoglou2027fox
   status: accepted
@@ -17,6 +19,8 @@
   keywords: [Joint Embedding Predictive Architectures, Forgery Detection]
   title: "Generalizable AI-Generated Image Detection with Embedding-Space Explanations"
   authors: N. Giakoumoglou, P. Giakoumoglou, T. Stathaki, S. Papadopoulos
+  links:
+    - {type: code, id: mever-team/fox}
   
 - key: giakoumoglou2026snap
   status: accepted
