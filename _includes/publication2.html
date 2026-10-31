@@ -20,7 +20,7 @@
 
     {%- if pub.status == "preprint" -%}
 
-        {%- assign venue_text = "Under review" -%}
+        {%- assign venue_text = "Preprint, " | append: pub.year -%}
 
     {%- else -%}
 
@@ -59,7 +59,7 @@
 
     {%- if pub.status == "preprint" -%}
 
-        {%- assign display_badge = "Under Review" -%}
+        {%- assign display_badge = "Preprint" -%}
 
     {%- else -%}
 
