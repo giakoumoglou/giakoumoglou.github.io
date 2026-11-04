@@ -20,7 +20,18 @@
   title: "Generalizable AI-Generated Image Detection with Embedding-Space Explanations"
   authors: N. Giakoumoglou, P. Giakoumoglou, T. Stathaki, S. Papadopoulos
   links:
+    - {type: arxiv, id: "2611.04111"}
     - {type: code, id: mever-team/fox}
+  bib: |
+    @misc{giakoumoglou2026fox,
+          title={{Generalizable AI-Generated Image Detection with Embedding-Space Explanations}},
+          author={Nikos Giakoumoglou and Paschalis Giakoumoglou and Tania Stathaki and Symeon Papadopoulos},
+          year={2026},
+          eprint={2611.04111},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2611.04111},
+    }
   
 - key: giakoumoglou2026snap
   status: accepted
