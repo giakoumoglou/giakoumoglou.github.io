@@ -9,7 +9,18 @@
   title: "A Stochastic Latent Variable Generalization of Joint-Embedding Predictive Architectures"
   authors: N. Giakoumoglou, P. Giakoumoglou, T. Stathaki
   links:
+    - {type: arxiv, id: "2611.09302"}
     - {type: code, id: giakoumoglou/sjepa}
+  bib: |
+    @misc{giakoumoglou2026sjepa,
+          title={{A Stochastic Latent Variable Generalization of Joint-Embedding Predictive Architectures}},
+          author={Nikos Giakoumoglou and Paschalis Giakoumoglou and Tania Stathaki},
+          year={2026},
+          eprint={2611.09302},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2611.09302},
+    }
 
 - key: giakoumoglou2027fox
   status: accepted
