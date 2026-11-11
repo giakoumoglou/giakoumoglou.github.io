@@ -128,6 +128,7 @@
   links:
     - {type: openreview, id: r0ONsZAFKC}
     - {type: arxiv, id: "2407.11802"}
+    - {type: code, id: giakoumoglou/rrd}
   abstract: >
     Knowledge Distillation (KD) transfers knowledge from a large teacher to a smaller student model. While contrastive objectives have proven effective for learning structured representations in self-supervised settings, their use in distillation is hindered by two practical shortcomings: the reliance on external memory banks for negative sampling, and fixed temperature hyperparameters that limit adaptability across training stages and teacher-student pairs. We therefore propose Discriminative and Consistent Representation Distillation (DCD), which combines contrastive instance discrimination with a consistency regularization term over the cross-model similarity matrix. The contrastive term aligns each student representation with its teacher counterpart, while the consistency term penalizes asymmetry between the row-normalized and column-normalized views of that matrix, constraining the off-diagonal structure that instance discrimination alone leaves free; we show that it vanishes precisely when this matrix is symmetric. We further introduce an efficient in-batch sampling that eliminates external memory banks, and learnable scale and bias parameters that adapt during training to control the sharpness and offset of the distillation signal. The method matches the training speed of standard KD while adding only 66K additional parameters. Through extensive experiments on CIFAR-100, ImageNet, and MS-COCO, together with cross-dataset transfer to STL-10 and Tiny ImageNet, we show that our approach achieves competitive performance in classification, object detection, and transfer, while substantially reducing memory consumption and training time compared to existing contrastive distillation methods.
   bib: |
@@ -151,6 +152,7 @@
   authors: A. R. Varvarigos, N. Giakoumoglou, T. Stathaki
   links:
     - {type: arxiv, id: "2608.08308"}
+    - {type: code, id: AVarvarigos/Open-World-Semantic-Segmentation-Including-Class-Similarity}
   abstract: >
     Modern vision systems must operate in "open-world" settings, where models must recognize known categories and detect unseen or anomalous content. Conventional semantic segmentation models operate under a "closed-world" assumption, often producing overconfident misclassifications on novel content. We address open-world semantic segmentation, the joint task of segmenting known classes while detecting and grouping novel or anomalous content without additional supervision, by extending a dual-decoder baseline with a third, complementary decoder within a unified encoder-decoder design. The first decoder performs closed-set segmentation using Gaussian prototypes for known categories. The second uses contrastive feature learning to isolate unknown regions in embedding space. The third, our key contribution, is a sensitivity decoder that captures fine-grained texture irregularities and activation instabilities indicative of semantic uncertainty, which neither semantic prototypes nor contrastive norms can reliably detect. The three decoders provide genuinely complementary signals: class-level OOD distance in logit space, global feature energy in embedding space, and local activation instability across encoder scales. Experiments on Cityscapes and BDD-Anomaly show that our method improves anomaly segmentation and novel-class discovery while maintaining competitive closed-set accuracy, with gains of +2.4% AUROC and a 2.5 pp. reduction in FPR@95TPR on BDD-Anomaly over the baseline.
   bib: |
@@ -257,6 +259,7 @@
   authors: K. M. Papadopoulos, N. Giakoumoglou, A. Floros, T. Stathaki
   links:
     - {type: openreview, id: nywAT7N8Do}
+    - {type: code, id: MariosPapadopoulos/DnD_MIL}
   abstract: >
     Multiple Instance Learning (MIL) is widely used for Whole Slide Image classification in computational pathology, yet existing approaches suffer from a representation bottleneck where diverse patch-level features are compressed into a single slide-level embedding. We propose Divide-and-Distill (D&amp;D), which clusters the feature space into coherent regions, trains expert models on each cluster, and distills their knowledge into a unified model. Experiments demonstrate that D&amp;D consistently improves six state-of-the-art MIL methods in both accuracy and AUC while maintaining single-model inference efficiency.
   bib: |
