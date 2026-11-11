@@ -1,0 +1,21 @@
+{%- assign now = site.time | date: '%s' | plus: 0 -%}
+
+{%- capture upcoming_rows -%}
+{%- for item in site.data.upcoming -%}
+{%- assign end = item.end | date: '%s' | plus: 0 -%}
+{%- unless item.end and end < now -%}
+<tr><td class="news-date">{{ item.date }}</td><td class="news-text">{% include inline-md.html text=item.text %}</td></tr>
+{%- endunless -%}
+{%- endfor -%}
+{%- endcapture -%}
+
+{%- assign upcoming_rows = upcoming_rows | strip -%}
+
+{%- if upcoming_rows != "" %}
+<section id="upcoming">
+    <h2>Upcoming</h2>
+    <table class="news-table">
+        {{ upcoming_rows }}
+    </table>
+</section>
+{%- endif %}
