@@ -16,9 +16,9 @@ bio: >
   University of Thessaloniki in 2021.
 
 focus: >
-My research focuses on self-supervised representation learning, from contrastive learning to joint-embedding predictive
-architectures (JEPAs), with an emphasis on uncertainty-aware representations towards world models for prediction and
-reasoning. Despite that, I have worked on applications in digital pathology, autonomous driving, and retrieval.
+  My research focuses on self-supervised representation learning, from contrastive learning to joint-embedding predictive
+  architectures (JEPAs), with an emphasis on uncertainty-aware representations towards world models for prediction and
+  reasoning. Despite that, I have worked on applications in digital pathology, autonomous driving, and retrieval.
 
 social:
   - title: Email
